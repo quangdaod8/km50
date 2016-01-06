@@ -31,7 +31,6 @@
 		D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34C1C3A31A3002DB8BF /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
 		D622D3501C3A3368002DB8BF /* networkData.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34F1C3A3368002DB8BF /* networkData.m */; settings = {ASSET_TAGS = (); }; };
 		D622D3541C3A33DC002DB8BF /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D3531C3A33DC002DB8BF /* NetworkService.m */; settings = {ASSET_TAGS = (); }; };
-		D6865EEE1C3BB34A00AF9EFE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6865EED1C3BB34A00AF9EFE /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		D69F45C51C3A470400697F97 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F45C41C3A470400697F97 /* Settings.m */; settings = {ASSET_TAGS = (); }; };
 		D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED1EF1C3ACD7A00813889 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
 		D6EED2361C3ADA9700813889 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EED2351C3ADA9700813889 /* TodayViewController.m */; };
@@ -54,6 +53,8 @@
 		D6EED2641C3B585800813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2621C3B585800813889 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		D6EED2651C3B585800813889 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2631C3B585800813889 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2661C3B587500813889 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		DB279C5E1C3D4B550043F889 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = DB279C5D1C3D4B550043F889 /* Info.m */; settings = {ASSET_TAGS = (); }; };
+		DB279C611C3D5A2D0043F889 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB279C601C3D5A2D0043F889 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +114,6 @@
 		D622D34F1C3A3368002DB8BF /* networkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = networkData.m; sourceTree = "<group>"; };
 		D622D3521C3A33DC002DB8BF /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		D622D3531C3A33DC002DB8BF /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
-		D6865EED1C3BB34A00AF9EFE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D69F45C31C3A470400697F97 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		D69F45C41C3A470400697F97 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		D6EED1EF1C3ACD7A00813889 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -131,6 +131,9 @@
 		D6EED2621C3B585800813889 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D6EED2631C3B585800813889 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D6EED2661C3B587500813889 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DB279C5C1C3D4B550043F889 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		DB279C5D1C3D4B550043F889 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		DB279C601C3D5A2D0043F889 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +170,7 @@
 				D6EED2461C3AE7DD00813889 /* libz.tbd in Frameworks */,
 				D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */,
 				D6EED2451C3AE7C600813889 /* CFNetwork.framework in Frameworks */,
-				D6865EEE1C3BB34A00AF9EFE /* Parse.framework in Frameworks */,
+				DB279C611C3D5A2D0043F889 /* Parse.framework in Frameworks */,
 				D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +280,7 @@
 		D622D3381C3A2255002DB8BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DB279C5F1C3D4B590043F889 /* Info */,
 				D6EED2561C3B15AB00813889 /* Tut */,
 				D6EED2551C3B15A100813889 /* Setting */,
 				D6EED2541C3B159000813889 /* MainViewController */,
@@ -323,7 +327,7 @@
 		D6EED2331C3ADA9700813889 /* Khuyen Mai */ = {
 			isa = PBXGroup;
 			children = (
-				D6865EED1C3BB34A00AF9EFE /* Parse.framework */,
+				DB279C601C3D5A2D0043F889 /* Parse.framework */,
 				D6EED2661C3B587500813889 /* Bolts.framework */,
 				D6EED2341C3ADA9700813889 /* TodayViewController.h */,
 				D6EED2351C3ADA9700813889 /* TodayViewController.m */,
@@ -358,6 +362,15 @@
 				D6EED2581C3B15C700813889 /* TutView.m */,
 			);
 			name = Tut;
+			sourceTree = "<group>";
+		};
+		DB279C5F1C3D4B590043F889 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				DB279C5C1C3D4B550043F889 /* Info.h */,
+				DB279C5D1C3D4B550043F889 /* Info.m */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +489,7 @@
 				D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */,
 				D622D33D1C3A28D0002DB8BF /* CustomCell.m in Sources */,
 				D622D3501C3A3368002DB8BF /* networkData.m in Sources */,
+				DB279C5E1C3D4B550043F889 /* Info.m in Sources */,
 				D6EED2591C3B15C700813889 /* TutView.m in Sources */,
 				D622D3541C3A33DC002DB8BF /* NetworkService.m in Sources */,
 				D69F45C51C3A470400697F97 /* Settings.m in Sources */,
@@ -613,7 +627,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hoa Vo (S7732LP7E8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KM50",
@@ -623,7 +638,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.KM50;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fbc2b917-0f70-47d0-a51d-12637e6e3e1f";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -631,7 +646,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hoa Vo (S7732LP7E8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KM50",
@@ -641,17 +657,23 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.KM50;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fbc2b917-0f70-47d0-a51d-12637e6e3e1f";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		D6EED23F1C3ADA9700813889 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hoa Vo (S7732LP7E8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hoa Vo (S7732LP7E8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
@@ -664,7 +686,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.duyquang.KM50.Khuyen-Mai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c6c9a430-97c7-4eb6-87ff-7f155fef124a";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -672,10 +694,16 @@
 		D6EED2401C3ADA9700813889 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hoa Vo (S7732LP7E8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hoa Vo (S7732LP7E8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
@@ -688,7 +716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.duyquang.KM50.Khuyen-Mai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c6c9a430-97c7-4eb6-87ff-7f155fef124a";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

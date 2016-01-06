@@ -49,6 +49,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Nhà Phát Triển";
+    self.navigationItem.backBarButtonItem.title = @" ";
        // Do any additional setup after loading the view.
 }
 

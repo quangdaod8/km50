@@ -22,7 +22,7 @@
 -(void)setDataByNetworkData:(networkData *)networkData {
     _imgNetwork.image = [UIImage imageNamed:networkData.network];
     if(networkData.isKm) _labelMessage.text = networkData.message;
-    else _labelMessage.text = @"Hiện tại chưa có chương trình khuyến mãi.";
+    else _labelMessage.text = networkData.notnow;
 }
 
 @end

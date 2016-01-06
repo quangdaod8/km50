@@ -21,6 +21,7 @@
         netData.isKm = [object[@"isKm"] boolValue];
         netData.message = object[@"message"];
         netData.network = @"vina";
+        netData.notnow = object[@"notnow"];
         [array addObject:netData];
             
         [query whereKey:@"network" equalTo:@"mobi"];
@@ -30,6 +31,8 @@
                     netData.isKm = [object[@"isKm"] boolValue];
                     netData.message = object[@"message"];
                     netData.network = @"mobi";
+                    netData.notnow = object[@"notnow"];
+                    
                     [array addObject:netData];
                     
                     [query whereKey:@"network" equalTo:@"viettel"];
@@ -39,6 +42,7 @@
                             netData.isKm = [object[@"isKm"] boolValue];
                             netData.message = object[@"message"];
                             netData.network = @"viettel";
+                            netData.notnow = object[@"notnow"];
                             [array addObject:netData];
                             
                             [query whereKey:@"network" equalTo:@"widget"];
@@ -48,6 +52,7 @@
                                     netData.isKm = [object[@"isKm"] boolValue];
                                     netData.message = object[@"message"];
                                     netData.network = @"widget";
+                                    netData.notnow = object[@"notnow"];
                                     [array addObject:netData];
                                     completed(array,nil);
                                 } else completed(nil,error);

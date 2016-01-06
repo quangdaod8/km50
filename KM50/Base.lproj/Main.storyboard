@@ -74,12 +74,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgp-QW-hDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="40"/>
+            <point key="canvasLocation" x="1331" y="568"/>
         </scene>
         <!--Thông Tin-->
         <scene sceneID="Yvs-TR-3GS">
             <objects>
-                <viewController title="Thông Tin" id="Idk-Vv-Fhy" sceneMemberID="viewController">
+                <viewController title="Thông Tin" id="Idk-Vv-Fhy" customClass="Info" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fn3-7M-sVb"/>
                         <viewControllerLayoutGuide type="bottom" id="lge-bI-xn7"/>
@@ -88,14 +88,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-76.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tj0-3p-EKn">
-                                <rect key="frame" x="110" y="72" width="100" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1ZE-3N-sMb"/>
-                                    <constraint firstAttribute="width" constant="100" id="qJe-ZX-JMy"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông báo liền tay - Nạp ngay kẻo lỡ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-0M-Tw5">
                                 <rect key="frame" x="16" y="180" width="288" height="21"/>
                                 <animations/>
@@ -130,24 +122,39 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-Cc-rX2">
+                                <rect key="frame" x="122" y="96" width="76" height="76"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="0pQ-SO-sGy"/>
+                                    <constraint firstAttribute="height" constant="76" id="2vF-Wh-cBv"/>
+                                </constraints>
+                                <state key="normal" image="Icon-76.png" backgroundImage="Icon-76.png"/>
+                                <connections>
+                                    <action selector="btnSetup:" destination="Idk-Vv-Fhy" eventType="touchUpInside" id="BWb-An-eyo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tj0-3p-EKn" firstAttribute="centerX" secondItem="Xqu-FA-fDr" secondAttribute="centerX" id="1bd-PX-Pvp"/>
                             <constraint firstItem="lge-bI-xn7" firstAttribute="top" secondItem="SYj-YD-WRN" secondAttribute="bottom" constant="20" id="2f9-oY-Gs6"/>
-                            <constraint firstItem="Tj0-3p-EKn" firstAttribute="top" secondItem="fn3-7M-sVb" secondAttribute="bottom" constant="8" id="3Kn-bU-HvP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="trailing" id="66m-48-wIH"/>
                             <constraint firstAttribute="leadingMargin" secondItem="R7q-0M-Tw5" secondAttribute="leading" id="8c1-h4-ucp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SYj-YD-WRN" secondAttribute="trailing" id="NOE-iw-lu8"/>
-                            <constraint firstItem="R7q-0M-Tw5" firstAttribute="top" secondItem="Tj0-3p-EKn" secondAttribute="bottom" constant="8" id="bGx-Ae-guT"/>
+                            <constraint firstItem="R7q-0M-Tw5" firstAttribute="top" secondItem="ahV-Cc-rX2" secondAttribute="bottom" constant="8" id="ZJP-aN-7vi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SYj-YD-WRN" secondAttribute="leading" id="dpO-xh-Rrc"/>
+                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="top" secondItem="fn3-7M-sVb" secondAttribute="bottom" constant="32" id="fCp-xz-ZKT"/>
+                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="centerX" secondItem="Xqu-FA-fDr" secondAttribute="centerX" id="g8I-JO-Mof"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R7q-0M-Tw5" secondAttribute="trailing" id="tZZ-1U-QmE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="leading" id="uu5-G2-bKB"/>
                             <constraint firstItem="3Rb-Nj-Uob" firstAttribute="top" secondItem="R7q-0M-Tw5" secondAttribute="bottom" constant="2" id="wfc-Vv-5Cv"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="lFs-Sy-Tcz" kind="show" identifier="setup" id="vwa-6J-WjZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3h1-UI-u0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,28 +177,14 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="J0G-a5-guG">
-                                    <rect key="frame" x="0.0" y="64" width="328" height="110"/>
+                                    <rect key="frame" x="0.0" y="64" width="328" height="84"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mde-Zx-pgB">
-                                            <rect key="frame" x="116" y="72" width="96" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-HF-nwR">
+                                            <rect key="frame" x="8" y="0.0" width="312" height="84"/>
                                             <animations/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="YTb-GQ-Q3s"/>
-                                                <constraint firstAttribute="width" constant="96" id="m6H-fQ-OeG"/>
-                                            </constraints>
-                                            <state key="normal" title="Cài Widget"/>
-                                            <connections>
-                                                <action selector="btnWidgetPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hW4-VY-Q9v"/>
-                                                <segue destination="ME1-po-Qr6" kind="show" id="93U-ya-H5k"/>
-                                            </connections>
-                                        </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-HF-nwR">
-                                            <rect key="frame" x="8" y="0.0" width="312" height="72"/>
-                                            <animations/>
-                                            <string key="text">Thông báo sẽ tự động gửi về ngay khi có chương trình khuyến mãi. Bạn cũng có thể xem thông tin ngay trên màn hình mà không cần mở ứng dụng.</string>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                            <string key="text">Hệ thống sẽ tự động gửi thông báo ngay khi có chương trình khuyến mãi. Bạn cũng có thể xem thông tin ngay trên màn hình mà không cần mở ứng dụng bằng cách cài Widget.</string>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -199,12 +192,10 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                     <animations/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="Mde-Zx-pgB" firstAttribute="top" secondItem="aiI-HF-nwR" secondAttribute="bottom" id="1Q4-Bd-iGo"/>
-                                        <constraint firstAttribute="bottom" secondItem="Mde-Zx-pgB" secondAttribute="bottom" constant="8" id="A7O-Fe-dZi"/>
+                                        <constraint firstAttribute="bottom" secondItem="aiI-HF-nwR" secondAttribute="bottom" id="3P0-JR-EeM"/>
                                         <constraint firstItem="aiI-HF-nwR" firstAttribute="top" secondItem="J0G-a5-guG" secondAttribute="top" id="ek0-Xj-WR5"/>
                                         <constraint firstItem="aiI-HF-nwR" firstAttribute="leading" secondItem="J0G-a5-guG" secondAttribute="leading" constant="8" id="g0P-H3-rQ4"/>
                                         <constraint firstAttribute="trailing" secondItem="aiI-HF-nwR" secondAttribute="trailing" constant="8" id="sCy-40-qW9"/>
-                                        <constraint firstItem="Mde-Zx-pgB" firstAttribute="centerX" secondItem="J0G-a5-guG" secondAttribute="centerX" id="wUX-8f-0km"/>
                                     </constraints>
                                 </view>
                                 <connections>
@@ -227,10 +218,9 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="btnWidget" destination="Mde-Zx-pgB" id="A1Z-Oo-7hq"/>
                         <outlet property="tableView" destination="h0N-ex-gMB" id="Gev-Wk-PDg"/>
-                        <segue destination="lFs-Sy-Tcz" kind="show" identifier="setup" id="hA2-kb-Vij"/>
                         <segue destination="Idk-Vv-Fhy" kind="show" identifier="info" id="lL7-0s-6Sm"/>
+                        <segue destination="ME1-po-Qr6" kind="show" identifier="wg" id="dWR-qr-xbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -249,32 +239,32 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Viettel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vXL-GM-f4O">
-                                <rect key="frame" x="16" y="72" width="231" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Viettel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vXL-GM-f4O">
+                                <rect key="frame" x="12" y="72" width="239" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobifone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-8t-tAW">
-                                <rect key="frame" x="16" y="110" width="231" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobifone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-8t-tAW">
+                                <rect key="frame" x="12" y="110" width="239" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vinaphone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tSA-FI-CLk">
-                                <rect key="frame" x="16" y="148" width="231" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vinaphone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tSA-FI-CLk">
+                                <rect key="frame" x="12" y="148" width="239" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thông báo đẩy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erP-rp-Nyo">
-                                <rect key="frame" x="16" y="224" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thông báo đẩy" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="erP-rp-Nyo">
+                                <rect key="frame" x="12" y="224" width="296" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDh-se-BAu">
-                                <rect key="frame" x="16" y="262" width="113" height="34"/>
+                                <rect key="frame" x="12" y="262" width="113" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Lưu Thông tin">
@@ -284,14 +274,14 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                     <action selector="btnTest:" destination="lFs-Sy-Tcz" eventType="touchUpInside" id="YF1-gI-ZxK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tin Widget" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-l9-nEI">
-                                <rect key="frame" x="16" y="186" width="231" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tin Widget" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-l9-nEI">
+                                <rect key="frame" x="12" y="186" width="239" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-aa-6Z3">
-                                <rect key="frame" x="255" y="72" width="51" height="31"/>
+                                <rect key="frame" x="259" y="72" width="51" height="31"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="gcm-O6-P1P"/>
@@ -299,7 +289,7 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 </constraints>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mfv-Ki-OR8">
-                                <rect key="frame" x="255" y="109" width="51" height="31"/>
+                                <rect key="frame" x="259" y="109" width="51" height="31"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="aeI-UU-s1m"/>
@@ -307,7 +297,7 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 </constraints>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a4o-iv-t1W">
-                                <rect key="frame" x="255" y="147" width="51" height="31"/>
+                                <rect key="frame" x="259" y="147" width="51" height="31"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="bDh-ia-KRS"/>
@@ -315,7 +305,7 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 </constraints>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRH-PB-pwq">
-                                <rect key="frame" x="167" y="262" width="137" height="34"/>
+                                <rect key="frame" x="171" y="262" width="137" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Gửi Thông Báo &gt;"/>
@@ -324,7 +314,7 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kn8-uK-hY1">
-                                <rect key="frame" x="255" y="186" width="51" height="31"/>
+                                <rect key="frame" x="259" y="186" width="51" height="31"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="d1F-np-HO8"/>
@@ -336,32 +326,32 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="erP-rp-Nyo" firstAttribute="top" secondItem="BrG-l9-nEI" secondAttribute="bottom" constant="8" id="1hZ-G4-DeO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xRH-PB-pwq" secondAttribute="trailing" id="3Q5-Tc-eUf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xRH-PB-pwq" secondAttribute="trailing" constant="-4" id="3Q5-Tc-eUf"/>
                             <constraint firstItem="vXL-GM-f4O" firstAttribute="top" secondItem="PwK-Bf-GIs" secondAttribute="bottom" constant="8" id="8Sy-PK-XCc"/>
                             <constraint firstItem="kn8-uK-hY1" firstAttribute="top" secondItem="a4o-iv-t1W" secondAttribute="bottom" constant="8" id="Cgg-9T-DSD"/>
                             <constraint firstItem="tSA-FI-CLk" firstAttribute="top" secondItem="Gkd-8t-tAW" secondAttribute="bottom" constant="8" id="FEa-8l-znm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mfv-Ki-OR8" secondAttribute="trailing" id="FVX-wa-zeS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="erP-rp-Nyo" secondAttribute="trailing" id="JV5-Pq-mV8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mfv-Ki-OR8" secondAttribute="trailing" constant="-4" id="FVX-wa-zeS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="erP-rp-Nyo" secondAttribute="trailing" constant="-4" id="JV5-Pq-mV8"/>
                             <constraint firstItem="o6e-aa-6Z3" firstAttribute="leading" secondItem="vXL-GM-f4O" secondAttribute="trailing" constant="8" id="K3i-fN-VvY"/>
                             <constraint firstItem="o6e-aa-6Z3" firstAttribute="top" secondItem="PwK-Bf-GIs" secondAttribute="bottom" constant="8" id="KF5-cj-tyj"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="tSA-FI-CLk" secondAttribute="leading" id="Ksz-1k-peL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tSA-FI-CLk" secondAttribute="leading" constant="4" id="Ksz-1k-peL"/>
                             <constraint firstItem="mfv-Ki-OR8" firstAttribute="top" secondItem="o6e-aa-6Z3" secondAttribute="bottom" constant="6" id="Ler-yU-OUP"/>
                             <constraint firstItem="kn8-uK-hY1" firstAttribute="leading" secondItem="BrG-l9-nEI" secondAttribute="trailing" constant="8" id="O25-rz-aVs"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="YDh-se-BAu" secondAttribute="leading" id="SXx-cB-u3B"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kn8-uK-hY1" secondAttribute="trailing" id="Tki-sl-C3g"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YDh-se-BAu" secondAttribute="leading" constant="4" id="SXx-cB-u3B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kn8-uK-hY1" secondAttribute="trailing" constant="-4" id="Tki-sl-C3g"/>
                             <constraint firstItem="xRH-PB-pwq" firstAttribute="top" secondItem="erP-rp-Nyo" secondAttribute="bottom" constant="8" id="UhD-N8-WMa"/>
                             <constraint firstItem="a4o-iv-t1W" firstAttribute="top" secondItem="mfv-Ki-OR8" secondAttribute="bottom" constant="7" id="VSI-w8-Mn2"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="vXL-GM-f4O" secondAttribute="leading" id="WDS-gE-6zf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vXL-GM-f4O" secondAttribute="leading" constant="4" id="WDS-gE-6zf"/>
                             <constraint firstItem="BrG-l9-nEI" firstAttribute="top" secondItem="tSA-FI-CLk" secondAttribute="bottom" constant="8" id="YXg-kr-t0R"/>
                             <constraint firstItem="mfv-Ki-OR8" firstAttribute="leading" secondItem="Gkd-8t-tAW" secondAttribute="trailing" constant="8" id="ZXS-yP-Vth"/>
                             <constraint firstItem="a4o-iv-t1W" firstAttribute="leading" secondItem="tSA-FI-CLk" secondAttribute="trailing" constant="8" id="ZyD-X2-YVf"/>
                             <constraint firstItem="Gkd-8t-tAW" firstAttribute="top" secondItem="vXL-GM-f4O" secondAttribute="bottom" constant="8" id="adf-uX-xDZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a4o-iv-t1W" secondAttribute="trailing" id="biX-SM-FVm"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Gkd-8t-tAW" secondAttribute="leading" id="gRI-OU-4mp"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="erP-rp-Nyo" secondAttribute="leading" id="i5W-Av-dJG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a4o-iv-t1W" secondAttribute="trailing" constant="-4" id="biX-SM-FVm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Gkd-8t-tAW" secondAttribute="leading" constant="4" id="gRI-OU-4mp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="erP-rp-Nyo" secondAttribute="leading" constant="4" id="i5W-Av-dJG"/>
                             <constraint firstItem="YDh-se-BAu" firstAttribute="top" secondItem="erP-rp-Nyo" secondAttribute="bottom" constant="8" id="ibX-dA-qHK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o6e-aa-6Z3" secondAttribute="trailing" id="neJ-Sg-BmS"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="BrG-l9-nEI" secondAttribute="leading" id="yqN-Mq-hy9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o6e-aa-6Z3" secondAttribute="trailing" constant="-4" id="neJ-Sg-BmS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BrG-l9-nEI" secondAttribute="leading" constant="4" id="yqN-Mq-hy9"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -379,7 +369,7 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfv-LX-WXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="686"/>
+            <point key="canvasLocation" x="1186" y="-337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jpt-j3-p0m">

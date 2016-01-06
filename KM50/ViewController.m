@@ -18,13 +18,13 @@
 
     self.navigationItem.title = @"KM50";
 
-    UIBarButtonItem *setup = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(setup)];
-    self.navigationItem.rightBarButtonItem = setup;
-    [self.navigationItem.rightBarButtonItem setEnabled:NO];
-    
-    UIBarButtonItem *info = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(info)];
+    UIBarButtonItem *info = [[UIBarButtonItem alloc]initWithTitle:@"Thông tin" style:UIBarButtonItemStylePlain  target:self action:@selector(info)];
     self.navigationItem.leftBarButtonItem = info;
     [self.navigationItem.leftBarButtonItem setEnabled:NO];
+    
+    UIBarButtonItem *wg = [[UIBarButtonItem alloc]initWithTitle:@"Cài Widget" style:UIBarButtonItemStylePlain  target:self action:@selector(widget)];
+    self.navigationItem.rightBarButtonItem = wg;
+    [self.navigationItem.rightBarButtonItem setEnabled:NO];
     
     _btnWidget.clipsToBounds = YES;
     _btnWidget.layer.cornerRadius = 5;
@@ -35,11 +35,11 @@
     NetworkService *service = [[NetworkService alloc]init];
     [service getDataForArray:^(NSArray *data, NSError *error) {
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [self.navigationItem.leftBarButtonItem setEnabled:YES];
+        [self.navigationItem.rightBarButtonItem setEnabled:YES];
         if(!error) {
             _array = [NSArray arrayWithArray:data];
             [_tableView reloadData];
-            [self.navigationItem.rightBarButtonItem setEnabled:YES];
-            [self.navigationItem.leftBarButtonItem setEnabled:YES];
         }
         else {
             [self AlertWithTitle:@"Lỗi Mạng" Messenger:@"Vui lòng kiểm tra kết nối Internet." Butontitle:@"Ok"];
@@ -74,31 +74,8 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
--(void)setup {
-    UIAlertController *al = [UIAlertController alertControllerWithTitle:@"Nhà Phát Triển" message:@"Dành cho nhà phát triển cập nhật dữ liệu lên Server. Người dùng không được cấp quyền vào mục này!" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *no = [UIAlertAction actionWithTitle:@"Huỷ" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        [al dismissViewControllerAnimated:YES completion:nil];
-    }];
-    
-    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        PFQuery *querry = [PFQuery queryWithClassName:@"data"];
-        [querry whereKey:@"network" equalTo:@"pass"];
-        [querry getFirstObjectInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
-            if(!error) { if([al.textFields[0].text isEqualToString:object[@"message"]]) [self performSegueWithIdentifier:@"setup" sender:self];
-            } else [al dismissViewControllerAnimated:YES completion:nil];
-        }];
-    }];
-    [al addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"Nhập mật khẩu";
-        textField.secureTextEntry = YES;
-        textField.textColor = [UIColor redColor];
-    }];
-    [al addAction:no];
-    [al addAction:ok];
-    [self presentViewController:al animated:YES completion:nil];
-
-}
-- (IBAction)btnWidgetPress:(id)sender {
+-(void)widget {
+    [self performSegueWithIdentifier:@"wg" sender:self];
 }
 -(void)info {
     [self performSegueWithIdentifier:@"info" sender:self];

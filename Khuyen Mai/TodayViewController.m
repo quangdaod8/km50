@@ -43,7 +43,7 @@
                 completionHandler(NCUpdateResultNewData);
             }
             else {
-            _labelText.text = @"Hiện tại chưa có chương trình khuyến mãi nào.";
+                _labelText.text = object[@"notnow"];
                 completionHandler(NCUpdateResultNoData);
             }
         } else {
