@@ -15,9 +15,8 @@
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *array;
+@property(nonatomic, readonly) UIUserNotificationType types;
 
-@property (weak, nonatomic) IBOutlet UIButton *btnWidget;
 
-- (IBAction)btnWidgetPress:(id)sender;
 @end
 

@@ -17,17 +17,17 @@
 - (void)viewDidLoad {
 
     self.navigationItem.title = @"KM50";
+    if(![[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
+        [self AlertWithTitle:@"Cho Phép Thông Báo" Messenger:@"Vui lòng cho phép thông báo để hệ thống có thể tự động gửi thông báo ngay khi có chương trình khuyến mãi" Butontitle:@"Ok"];
+    } 
 
     UIBarButtonItem *info = [[UIBarButtonItem alloc]initWithTitle:@"Thông tin" style:UIBarButtonItemStylePlain  target:self action:@selector(info)];
     self.navigationItem.leftBarButtonItem = info;
     [self.navigationItem.leftBarButtonItem setEnabled:NO];
-    
+        
     UIBarButtonItem *wg = [[UIBarButtonItem alloc]initWithTitle:@"Cài Widget" style:UIBarButtonItemStylePlain  target:self action:@selector(widget)];
     self.navigationItem.rightBarButtonItem = wg;
     [self.navigationItem.rightBarButtonItem setEnabled:NO];
-    
-    _btnWidget.clipsToBounds = YES;
-    _btnWidget.layer.cornerRadius = 5;
     
     _array = [[NSArray alloc]init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -80,4 +80,5 @@
 -(void)info {
     [self performSegueWithIdentifier:@"info" sender:self];
 }
+
 @end

@@ -23,16 +23,16 @@
 		D622D32A1C3A1BDB002DB8BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622D3291C3A1BDB002DB8BF /* SystemConfiguration.framework */; };
 		D622D32C1C3A1BE6002DB8BF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D622D32B1C3A1BE6002DB8BF /* libz.tbd */; };
 		D622D32E1C3A1BF2002DB8BF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D622D32D1C3A1BF2002DB8BF /* libsqlite3.tbd */; };
-		D622D3331C3A1FB7002DB8BF /* mobi.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3301C3A1FB7002DB8BF /* mobi.png */; settings = {ASSET_TAGS = (); }; };
-		D622D33D1C3A28D0002DB8BF /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D33B1C3A28D0002DB8BF /* CustomCell.m */; settings = {ASSET_TAGS = (); }; };
-		D622D33E1C3A28D0002DB8BF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D622D33C1C3A28D0002DB8BF /* CustomCell.xib */; settings = {ASSET_TAGS = (); }; };
-		D622D3441C3A2C71002DB8BF /* vina.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3431C3A2C71002DB8BF /* vina.png */; settings = {ASSET_TAGS = (); }; };
-		D622D3481C3A2E4E002DB8BF /* viettel.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3471C3A2E4E002DB8BF /* viettel.png */; settings = {ASSET_TAGS = (); }; };
-		D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34C1C3A31A3002DB8BF /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
-		D622D3501C3A3368002DB8BF /* networkData.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34F1C3A3368002DB8BF /* networkData.m */; settings = {ASSET_TAGS = (); }; };
-		D622D3541C3A33DC002DB8BF /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D3531C3A33DC002DB8BF /* NetworkService.m */; settings = {ASSET_TAGS = (); }; };
-		D69F45C51C3A470400697F97 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F45C41C3A470400697F97 /* Settings.m */; settings = {ASSET_TAGS = (); }; };
-		D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED1EF1C3ACD7A00813889 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		D622D3331C3A1FB7002DB8BF /* mobi.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3301C3A1FB7002DB8BF /* mobi.png */; };
+		D622D33D1C3A28D0002DB8BF /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D33B1C3A28D0002DB8BF /* CustomCell.m */; };
+		D622D33E1C3A28D0002DB8BF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D622D33C1C3A28D0002DB8BF /* CustomCell.xib */; };
+		D622D3441C3A2C71002DB8BF /* vina.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3431C3A2C71002DB8BF /* vina.png */; };
+		D622D3481C3A2E4E002DB8BF /* viettel.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3471C3A2E4E002DB8BF /* viettel.png */; };
+		D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34C1C3A31A3002DB8BF /* MBProgressHUD.m */; };
+		D622D3501C3A3368002DB8BF /* networkData.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34F1C3A3368002DB8BF /* networkData.m */; };
+		D622D3541C3A33DC002DB8BF /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D3531C3A33DC002DB8BF /* NetworkService.m */; };
+		D69F45C51C3A470400697F97 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F45C41C3A470400697F97 /* Settings.m */; };
+		D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED1EF1C3ACD7A00813889 /* NotificationCenter.framework */; };
 		D6EED2361C3ADA9700813889 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EED2351C3ADA9700813889 /* TodayViewController.m */; };
 		D6EED2391C3ADA9700813889 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EED2371C3ADA9700813889 /* MainInterface.storyboard */; };
 		D6EED23D1C3ADA9700813889 /* Khuyen Mai.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6EED2311C3ADA9700813889 /* Khuyen Mai.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -45,16 +45,16 @@
 		D6EED24B1C3AE80E00813889 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622D3271C3A1BCF002DB8BF /* StoreKit.framework */; };
 		D6EED24C1C3AE81A00813889 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622D3291C3A1BDB002DB8BF /* SystemConfiguration.framework */; };
 		D6EED24D1C3AE82800813889 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D622D32D1C3A1BF2002DB8BF /* libsqlite3.tbd */; };
-		D6EED2511C3B14E000813889 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED24E1C3B14E000813889 /* 3.png */; settings = {ASSET_TAGS = (); }; };
-		D6EED2521C3B14E000813889 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED24F1C3B14E000813889 /* 2.png */; settings = {ASSET_TAGS = (); }; };
-		D6EED2531C3B14E000813889 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED2501C3B14E000813889 /* 1.png */; settings = {ASSET_TAGS = (); }; };
-		D6EED2591C3B15C700813889 /* TutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EED2581C3B15C700813889 /* TutView.m */; settings = {ASSET_TAGS = (); }; };
-		D6EED25B1C3B49B700813889 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED25A1C3B49B700813889 /* Icon-76@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D6EED2641C3B585800813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2621C3B585800813889 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		D6EED2651C3B585800813889 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2631C3B585800813889 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2661C3B587500813889 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		DB279C5E1C3D4B550043F889 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = DB279C5D1C3D4B550043F889 /* Info.m */; settings = {ASSET_TAGS = (); }; };
-		DB279C611C3D5A2D0043F889 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB279C601C3D5A2D0043F889 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		D6EED2511C3B14E000813889 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED24E1C3B14E000813889 /* 3.png */; };
+		D6EED2521C3B14E000813889 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED24F1C3B14E000813889 /* 2.png */; };
+		D6EED2531C3B14E000813889 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED2501C3B14E000813889 /* 1.png */; };
+		D6EED2591C3B15C700813889 /* TutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EED2581C3B15C700813889 /* TutView.m */; };
+		D6EED25B1C3B49B700813889 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EED25A1C3B49B700813889 /* Icon-76@2x.png */; };
+		D6EED2641C3B585800813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2621C3B585800813889 /* Bolts.framework */; };
+		D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2661C3B587500813889 /* Bolts.framework */; };
+		DB279C5E1C3D4B550043F889 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = DB279C5D1C3D4B550043F889 /* Info.m */; };
+		DB4D5D281C4333370052DEF2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4D5D271C4333370052DEF2 /* Parse.framework */; };
+		DB6BE6141C3E90CD00799984 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6BE6131C3E90CD00799984 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,11 +129,11 @@
 		D6EED2581C3B15C700813889 /* TutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutView.m; sourceTree = "<group>"; };
 		D6EED25A1C3B49B700813889 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		D6EED2621C3B585800813889 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		D6EED2631C3B585800813889 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D6EED2661C3B587500813889 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DB279C5C1C3D4B550043F889 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		DB279C5D1C3D4B550043F889 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
-		DB279C601C3D5A2D0043F889 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DB4D5D271C4333370052DEF2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DB6BE6131C3E90CD00799984 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				D622D3201C3A1BA1002DB8BF /* CoreGraphics.framework in Frameworks */,
 				D6EED2641C3B585800813889 /* Bolts.framework in Frameworks */,
 				D622D31E1C3A1B96002DB8BF /* CFNetwork.framework in Frameworks */,
-				D6EED2651C3B585800813889 /* Parse.framework in Frameworks */,
+				DB6BE6141C3E90CD00799984 /* Parse.framework in Frameworks */,
 				D622D31C1C3A1B8E002DB8BF /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,7 +170,7 @@
 				D6EED2461C3AE7DD00813889 /* libz.tbd in Frameworks */,
 				D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */,
 				D6EED2451C3AE7C600813889 /* CFNetwork.framework in Frameworks */,
-				DB279C611C3D5A2D0043F889 /* Parse.framework in Frameworks */,
+				DB4D5D281C4333370052DEF2 /* Parse.framework in Frameworks */,
 				D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,8 +228,8 @@
 		D622D3161C3A1B4E002DB8BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB6BE6131C3E90CD00799984 /* Parse.framework */,
 				D6EED2621C3B585800813889 /* Bolts.framework */,
-				D6EED2631C3B585800813889 /* Parse.framework */,
 				D622D32D1C3A1BF2002DB8BF /* libsqlite3.tbd */,
 				D622D32B1C3A1BE6002DB8BF /* libz.tbd */,
 				D622D3291C3A1BDB002DB8BF /* SystemConfiguration.framework */,
@@ -327,7 +327,7 @@
 		D6EED2331C3ADA9700813889 /* Khuyen Mai */ = {
 			isa = PBXGroup;
 			children = (
-				DB279C601C3D5A2D0043F889 /* Parse.framework */,
+				DB4D5D271C4333370052DEF2 /* Parse.framework */,
 				D6EED2661C3B587500813889 /* Bolts.framework */,
 				D6EED2341C3ADA9700813889 /* TodayViewController.h */,
 				D6EED2351C3ADA9700813889 /* TodayViewController.m */,
@@ -680,6 +680,28 @@
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 				);
 				INFOPLIST_FILE = "Khuyen Mai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -698,6 +720,28 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",

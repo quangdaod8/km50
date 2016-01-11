@@ -22,6 +22,9 @@
     [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]}];
     
+    [[UIApplication sharedApplication] currentUserNotificationSettings];
+    
+    
         // https://parse.com/docs/ios/guide#local-datastore
         [Parse enableLocalDatastore];
         
@@ -63,7 +66,7 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Store the deviceToken in the current Installation and save it to Parse
-    NSLog(@"token");
+    NSLog(@"push enabled");
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     if(currentInstallation.badge > 0) currentInstallation.badge = 0;
     [currentInstallation setDeviceTokenFromData:deviceToken];

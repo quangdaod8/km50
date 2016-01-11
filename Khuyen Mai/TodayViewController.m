@@ -57,7 +57,7 @@
 
 - (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets
 {
-    return UIEdgeInsetsZero;
+    return UIEdgeInsetsMake(5, 5, 5, 5);
 }
 
 @end

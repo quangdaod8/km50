@@ -50,6 +50,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Nhà Phát Triển";
     self.navigationItem.backBarButtonItem.title = @" ";
+    UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle:@"Lưu" style:UIBarButtonItemStylePlain target:self action:@selector(saveData)];
+    self.navigationItem.rightBarButtonItem = save;
        // Do any additional setup after loading the view.
 }
 
@@ -71,6 +73,31 @@
 */
 
 - (IBAction)btnTest:(id)sender {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    PFPush *push = [[PFPush alloc]init];
+    NSDictionary *data = @{ @"alert" : _txtPush.text};
+    PFQuery *query = [PFInstallation query];
+    PFInstallation *install = [PFInstallation currentInstallation];
+    [query whereKey:@"deviceToken" equalTo:install.deviceToken];
+    [push setQuery:query];
+    [push setData:data];
+    [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    }];
+
+   }
+
+
+- (IBAction)btnSend:(id)sender {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    PFPush *push = [[PFPush alloc]init];
+    NSDictionary *data = @{ @"alert" : _txtPush.text , @"badge" : @"Increment" };
+    [push setData:data];
+    [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    }];
+}
+-(void)saveData {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     PFQuery *query = [PFQuery queryWithClassName:@"data"];
     [query whereKey:@"network" equalTo:@"viettel"];
@@ -102,17 +129,6 @@
                         }]; }];
                 }]; }];
         }]; }];
-}
 
-
-- (IBAction)btnSend:(id)sender {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    PFPush *push = [[PFPush alloc]init];
-    NSDictionary *data = @{ @"alert" : _txtPush.text , @"badge" : @"Increment" };
-    [push setData:data];
-    [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
-    }];
-    
 }
 @end

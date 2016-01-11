@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nlb-vb-msL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nlb-vb-msL">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gik-DA-xyP">
                                 <rect key="frame" x="37" y="101" width="246" height="206"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="206" id="eVU-eB-Yfc"/>
                                     <constraint firstAttribute="width" constant="246" id="h7P-QS-IkX"/>
@@ -28,7 +27,6 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kéo thanh thông báo xuống " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odB-ez-yyM">
                                 <rect key="frame" x="37" y="72" width="246" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5yY-Vu-sIO"/>
                                     <constraint firstAttribute="width" constant="246" id="uLX-pj-je8"/>
@@ -39,7 +37,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thêm widget &quot;Khuyến Mãi&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-2I-Kf5">
                                 <rect key="frame" x="37" y="314" width="246" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="LTK-vu-hkB"/>
                                     <constraint firstAttribute="width" constant="246" id="RKe-1r-P6a"/>
@@ -50,14 +47,12 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8vu-C7-YbV">
                                 <rect key="frame" x="37" y="343" width="246" height="205"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="B6i-1O-wDA"/>
                                     <constraint firstAttribute="width" constant="246" id="fb1-mS-Fn9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="odB-ez-yyM" firstAttribute="centerX" secondItem="yY5-hR-5e8" secondAttribute="centerX" id="4bh-NJ-Av4"/>
@@ -88,16 +83,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông báo liền tay - Nạp ngay kẻo lỡ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-0M-Tw5">
-                                <rect key="frame" x="16" y="180" width="288" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-YD-WRN">
                                 <rect key="frame" x="16" y="478" width="288" height="70"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Oxk-b1-t4W"/>
                                 </constraints>
@@ -109,22 +96,19 @@ Email: daoduyquang91@gmail.com</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-Nj-Uob">
-                                <rect key="frame" x="16" y="203" width="288" height="204"/>
-                                <animations/>
+                                <rect key="frame" x="12" y="186" width="296" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="204" id="6XS-ST-upZ"/>
                                 </constraints>
-                                <string key="text">Không phải lúc nào tin nhắn khuyến mãi cũng đến được máy bạn và bạn chỉ biết được thông tin khuyến mãi của nhà mạng bạn đang dùng. Bạn muốn nhiều hơn thế?
-Ứng dụng đầu tiên tại Việt Nam cung cấp thông tin về các chương trình khuyến mãi thẻ cào điện thoại của 3 nhà mạng lớn: Vinaphone, Mobifone và Viettel.
-Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thông báo về máy. Widget của ứng dụng giúp bạn xem nhanh thông tin mà không phải mở ứng dụng lên.
-</string>
+                                <string key="text">*Không phải lúc nào máy bạn cũng nhận được tin nhắn khuyến mãi nạp thẻ. Nhà mạng thường kèm thêm các tin quảng cáo làm bạn khó chịu?
+*Ứng dụng đầu tiên tại Việt Nam cung cấp thông tin về các chương trình khuyến mãi giá trị thẻ nạp của 3 nhà mạng: Vina, Mobi &amp; Viettel. Không “Quảng Cáo”, Không “Spam”.
+*Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thông báo về máy. Widget giúp bạn xem nhanh khuyến mãi mà không cần mở ứng dụng.</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-Cc-rX2">
-                                <rect key="frame" x="122" y="96" width="76" height="76"/>
-                                <animations/>
+                                <rect key="frame" x="122" y="79" width="76" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="0pQ-SO-sGy"/>
                                     <constraint firstAttribute="height" constant="76" id="2vF-Wh-cBv"/>
@@ -134,20 +118,25 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                     <action selector="btnSetup:" destination="Idk-Vv-Fhy" eventType="touchUpInside" id="BWb-An-eyo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khuyến mãi liền tay - Nạp ngay kẻo lỡ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-0M-Tw5">
+                                <rect key="frame" x="16" y="163" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lge-bI-xn7" firstAttribute="top" secondItem="SYj-YD-WRN" secondAttribute="bottom" constant="20" id="2f9-oY-Gs6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="trailing" id="66m-48-wIH"/>
                             <constraint firstAttribute="leadingMargin" secondItem="R7q-0M-Tw5" secondAttribute="leading" id="8c1-h4-ucp"/>
+                            <constraint firstItem="3Rb-Nj-Uob" firstAttribute="leading" secondItem="Xqu-FA-fDr" secondAttribute="leadingMargin" constant="-4" id="FLp-KR-j9c"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SYj-YD-WRN" secondAttribute="trailing" id="NOE-iw-lu8"/>
                             <constraint firstItem="R7q-0M-Tw5" firstAttribute="top" secondItem="ahV-Cc-rX2" secondAttribute="bottom" constant="8" id="ZJP-aN-7vi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SYj-YD-WRN" secondAttribute="leading" id="dpO-xh-Rrc"/>
-                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="top" secondItem="fn3-7M-sVb" secondAttribute="bottom" constant="32" id="fCp-xz-ZKT"/>
+                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="top" secondItem="fn3-7M-sVb" secondAttribute="bottom" constant="15" id="fCp-xz-ZKT"/>
                             <constraint firstItem="ahV-Cc-rX2" firstAttribute="centerX" secondItem="Xqu-FA-fDr" secondAttribute="centerX" id="g8I-JO-Mof"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="trailing" constant="-4" id="opH-Ik-b7f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R7q-0M-Tw5" secondAttribute="trailing" id="tZZ-1U-QmE"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="leading" id="uu5-G2-bKB"/>
                             <constraint firstItem="3Rb-Nj-Uob" firstAttribute="top" secondItem="R7q-0M-Tw5" secondAttribute="bottom" constant="2" id="wfc-Vv-5Cv"/>
                         </constraints>
                     </view>
@@ -172,9 +161,8 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-ex-gMB">
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-ex-gMB">
                                 <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="J0G-a5-guG">
                                     <rect key="frame" x="0.0" y="64" width="328" height="84"/>
@@ -182,14 +170,12 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-HF-nwR">
                                             <rect key="frame" x="8" y="0.0" width="312" height="84"/>
-                                            <animations/>
                                             <string key="text">Hệ thống sẽ tự động gửi thông báo ngay khi có chương trình khuyến mãi. Bạn cũng có thể xem thông tin ngay trên màn hình mà không cần mở ứng dụng bằng cách cài Widget.</string>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="aiI-HF-nwR" secondAttribute="bottom" id="3P0-JR-EeM"/>
@@ -204,7 +190,6 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="h0N-ex-gMB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0MS-c3-dSV"/>
@@ -241,33 +226,28 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Viettel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vXL-GM-f4O">
                                 <rect key="frame" x="12" y="72" width="239" height="30"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobifone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-8t-tAW">
                                 <rect key="frame" x="12" y="110" width="239" height="30"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vinaphone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tSA-FI-CLk">
                                 <rect key="frame" x="12" y="148" width="239" height="30"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thông báo đẩy" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="erP-rp-Nyo">
                                 <rect key="frame" x="12" y="224" width="296" height="30"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDh-se-BAu">
-                                <rect key="frame" x="12" y="262" width="113" height="34"/>
-                                <animations/>
+                                <rect key="frame" x="12" y="262" width="89" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Lưu Thông tin">
+                                <state key="normal" title="Xem Trước">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -276,13 +256,11 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tin Widget" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-l9-nEI">
                                 <rect key="frame" x="12" y="186" width="239" height="30"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-aa-6Z3">
                                 <rect key="frame" x="259" y="72" width="51" height="31"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="gcm-O6-P1P"/>
                                     <constraint firstAttribute="height" constant="31" id="ibn-58-zIa"/>
@@ -290,7 +268,6 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mfv-Ki-OR8">
                                 <rect key="frame" x="259" y="109" width="51" height="31"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="aeI-UU-s1m"/>
                                     <constraint firstAttribute="width" constant="49" id="xuk-io-w3R"/>
@@ -298,7 +275,6 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a4o-iv-t1W">
                                 <rect key="frame" x="259" y="147" width="51" height="31"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="bDh-ia-KRS"/>
                                     <constraint firstAttribute="height" constant="31" id="zW0-g0-Cpi"/>
@@ -306,7 +282,6 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRH-PB-pwq">
                                 <rect key="frame" x="171" y="262" width="137" height="34"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Gửi Thông Báo &gt;"/>
                                 <connections>
@@ -315,14 +290,12 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kn8-uK-hY1">
                                 <rect key="frame" x="259" y="186" width="51" height="31"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="d1F-np-HO8"/>
                                     <constraint firstAttribute="width" constant="49" id="zkK-hv-Ea3"/>
                                 </constraints>
                             </switch>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="erP-rp-Nyo" firstAttribute="top" secondItem="BrG-l9-nEI" secondAttribute="bottom" constant="8" id="1hZ-G4-DeO"/>
@@ -380,7 +353,6 @@ Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thôn
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QCb-f6-g4V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
