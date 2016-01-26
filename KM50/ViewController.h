@@ -11,11 +11,16 @@
 #import "MBProgressHUD.h"
 #import <Parse/Parse.h>
 #import "NetworkService.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *array;
 @property(nonatomic, readonly) UIUserNotificationType types;
+- (IBAction)btnFb:(id)sender;
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
 
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nlb-vb-msL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nlb-vb-msL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -69,7 +69,202 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgp-QW-hDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1331" y="568"/>
+            <point key="canvasLocation" x="850" y="1022"/>
+        </scene>
+        <!--Quyên Góp-->
+        <scene sceneID="uTp-Ap-kmg">
+            <objects>
+                <viewController title="Quyên Góp" id="lFa-Tq-HJp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hNz-nk-YAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rf8-0N-50m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e1v-PZ-DYw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cũng giống như bạn, mình có những hoá đơn cần phải thanh toán mỗi tháng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CK-NG-aND">
+                                <rect key="frame" x="16" y="72" width="288" height="69"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEh-RQ-Jb4">
+                                <rect key="frame" x="16" y="142" width="288" height="168"/>
+                                <string key="text">Trong đó 1 phần chi phí dành cho KM50. Dịch vụ hỗ trợ cho KM50: lưu trữ dữ liệu &amp; gửi thông báo cho mỗi  thiết bị khi có khuyến mãi, nó không hoàn toàn miễn phí.
+Sự đóng góp của bạn sẽ giảm bớt chi phí cá nhân của mình dành cho KM50, ngoài ra khi có nhiều người dùng, KM50 cần phải được nâng cấp để hoạt động ổn định &amp; lâu dài. Chi phí quyên góp sẽ được sử dụng vào mục đích này.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rất vui lòng nếu nhận được sự quyên góp từ bạn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akG-6O-fOH">
+                                <rect key="frame" x="16" y="320" width="292" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYm-4X-fZm">
+                                <rect key="frame" x="16" y="367" width="288" height="67"/>
+                                <string key="text">Quyên góp xin gửi về:
+Tài khoản ngân hàng ViettinBank
+Chủ thẻ: Đào Duy Quang
+Số tài khoản: 711A24591628</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="VEh-RQ-Jb4" secondAttribute="leading" id="3XV-yi-6xa"/>
+                            <constraint firstItem="VEh-RQ-Jb4" firstAttribute="top" secondItem="5CK-NG-aND" secondAttribute="bottom" constant="1" id="77h-EE-zG5"/>
+                            <constraint firstItem="akG-6O-fOH" firstAttribute="top" secondItem="VEh-RQ-Jb4" secondAttribute="bottom" constant="10" id="J4R-tj-R7z"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pYm-4X-fZm" secondAttribute="leading" id="JgX-fT-8hO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VEh-RQ-Jb4" secondAttribute="trailing" id="MG0-EX-cm3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5CK-NG-aND" secondAttribute="trailing" id="Obp-AV-aRD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pYm-4X-fZm" secondAttribute="trailing" id="XTz-B5-8Vz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="akG-6O-fOH" secondAttribute="trailing" constant="-4" id="drM-8w-fhf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="akG-6O-fOH" secondAttribute="leading" id="ghK-zV-tsu"/>
+                            <constraint firstItem="pYm-4X-fZm" firstAttribute="top" secondItem="akG-6O-fOH" secondAttribute="bottom" constant="1" id="hHa-RZ-P3o"/>
+                            <constraint firstItem="5CK-NG-aND" firstAttribute="top" secondItem="hNz-nk-YAg" secondAttribute="bottom" constant="8" id="tQW-tc-9pg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5CK-NG-aND" secondAttribute="leading" id="yKz-cU-Th1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vb-0I-VsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="1022"/>
+        </scene>
+        <!--Tuỳ Chọn Thông Báo-->
+        <scene sceneID="s7l-l7-CyY">
+            <objects>
+                <tableViewController title="Tuỳ Chọn Thông Báo" id="Tc4-vl-N5W" customClass="OptionView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="shw-NX-Rp9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="ux9-lj-VMM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="106" id="2rJ-9a-SfW">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="106"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2rJ-9a-SfW" id="dHM-2P-MSB">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-1h-q58">
+                                                    <rect key="frame" x="8" y="8" width="304" height="86"/>
+                                                    <string key="text">Lựa chọn nhà mạng mà bạn quan tâm. Hệ thống sẽ gửi thông báo 2 lần trong ngày có khuyến mãi (lúc 8h &amp; 19h).
+Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Widget &amp; bên trong App.</string>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Xj4-1h-q58" secondAttribute="trailing" constant="8" id="c7Q-G2-RT1"/>
+                                            <constraint firstItem="Xj4-1h-q58" firstAttribute="top" secondItem="2rJ-9a-SfW" secondAttribute="top" constant="8" id="cT4-bQ-geq"/>
+                                            <constraint firstItem="Xj4-1h-q58" firstAttribute="leading" secondItem="2rJ-9a-SfW" secondAttribute="leading" constant="8" id="dox-IS-Nn2"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xj4-1h-q58" secondAttribute="bottom" constant="12" id="iaq-oN-ADc"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ed8-aU-ao6">
+                                        <rect key="frame" x="0.0" y="170" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ed8-aU-ao6" id="1zk-yh-F64">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-yk-llh">
+                                                    <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viettel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDB-Yd-Qm6">
+                                                    <rect key="frame" x="8" y="11" width="52" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="KDB-Yd-Qm6" firstAttribute="leading" secondItem="ed8-aU-ao6" secondAttribute="leading" constant="8" id="J2V-6l-6o5"/>
+                                            <constraint firstItem="KDB-Yd-Qm6" firstAttribute="centerY" secondItem="ed8-aU-ao6" secondAttribute="centerY" id="K51-YL-L0c"/>
+                                            <constraint firstAttribute="trailing" secondItem="gJ2-yk-llh" secondAttribute="trailing" constant="8" id="XwM-by-ciF"/>
+                                            <constraint firstItem="gJ2-yk-llh" firstAttribute="centerY" secondItem="ed8-aU-ao6" secondAttribute="centerY" id="giR-Mj-pVM"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="wGv-Lk-ecn">
+                                        <rect key="frame" x="0.0" y="214" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wGv-Lk-ecn" id="0CH-27-csZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7VK-MU-fqS">
+                                                    <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobifone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cND-fX-RAS">
+                                                    <rect key="frame" x="8" y="11" width="76" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="7VK-MU-fqS" firstAttribute="centerY" secondItem="wGv-Lk-ecn" secondAttribute="centerY" id="07D-PK-yQp"/>
+                                            <constraint firstItem="cND-fX-RAS" firstAttribute="leading" secondItem="wGv-Lk-ecn" secondAttribute="leading" constant="8" id="5oA-3h-LCm"/>
+                                            <constraint firstItem="cND-fX-RAS" firstAttribute="centerY" secondItem="wGv-Lk-ecn" secondAttribute="centerY" id="7mL-5a-TyT"/>
+                                            <constraint firstAttribute="trailing" secondItem="7VK-MU-fqS" secondAttribute="trailing" constant="8" id="sfF-cl-858"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="aZX-5P-GcE">
+                                        <rect key="frame" x="0.0" y="258" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZX-5P-GcE" id="zc2-lx-uDy">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yTq-gH-Cb0">
+                                                    <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vinaphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu1-Yj-Gnd">
+                                                    <rect key="frame" x="8" y="11" width="87" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="pu1-Yj-Gnd" firstAttribute="leading" secondItem="aZX-5P-GcE" secondAttribute="leading" constant="8" id="4Cn-QT-miD"/>
+                                            <constraint firstAttribute="trailing" secondItem="yTq-gH-Cb0" secondAttribute="trailing" constant="8" id="Me5-jL-eS6"/>
+                                            <constraint firstItem="yTq-gH-Cb0" firstAttribute="centerY" secondItem="aZX-5P-GcE" secondAttribute="centerY" id="Ze9-V0-YMy"/>
+                                            <constraint firstItem="pu1-Yj-Gnd" firstAttribute="centerY" secondItem="aZX-5P-GcE" secondAttribute="centerY" id="pSW-4O-2Wd"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Tc4-vl-N5W" id="KmM-6v-OeB"/>
+                            <outlet property="delegate" destination="Tc4-vl-N5W" id="QCk-mD-FTi"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="swMobi" destination="7VK-MU-fqS" id="kqK-cb-lyE"/>
+                        <outlet property="swViettel" destination="gJ2-yk-llh" id="hgv-cI-4Gc"/>
+                        <outlet property="swVina" destination="yTq-gH-Cb0" id="v8h-VK-V9f"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhu-p0-Igz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="312"/>
         </scene>
         <!--Thông Tin-->
         <scene sceneID="Yvs-TR-3GS">
@@ -83,30 +278,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-YD-WRN">
-                                <rect key="frame" x="16" y="478" width="288" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Oxk-b1-t4W"/>
-                                </constraints>
-                                <string key="text">Phát triển bởi: Đào Duy Quang
-Viện Toán Ứng Dụng &amp; Tin Học, trường ĐH Bách Khoa Hà Nội
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-YD-WRN">
+                                <rect key="frame" x="16" y="485" width="288" height="63"/>
+                                <string key="text">Nhà Phát Triển: Đào Duy Quang
+Viện Toán Ứng Dụng &amp; Tin Học trường Đại Học Bách Khoa Hà Nội
 Email: daoduyquang91@gmail.com</string>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-Nj-Uob">
-                                <rect key="frame" x="12" y="186" width="296" height="204"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="204" id="6XS-ST-upZ"/>
-                                </constraints>
-                                <string key="text">*Không phải lúc nào máy bạn cũng nhận được tin nhắn khuyến mãi nạp thẻ. Nhà mạng thường kèm thêm các tin quảng cáo làm bạn khó chịu?
-*Ứng dụng đầu tiên tại Việt Nam cung cấp thông tin về các chương trình khuyến mãi giá trị thẻ nạp của 3 nhà mạng: Vina, Mobi &amp; Viettel. Không “Quảng Cáo”, Không “Spam”.
-*Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thông báo về máy. Widget giúp bạn xem nhanh khuyến mãi mà không cần mở ứng dụng.</string>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-Cc-rX2">
                                 <rect key="frame" x="122" y="79" width="76" height="76"/>
                                 <constraints>
@@ -124,6 +304,15 @@ Email: daoduyquang91@gmail.com</string>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-Nj-Uob">
+                                <rect key="frame" x="12" y="186" width="296" height="172"/>
+                                <string key="text">*Không phải lúc nào máy bạn cũng nhận được tin nhắn khuyến mãi nạp thẻ. Nhà mạng thường kèm thêm các tin quảng cáo làm bạn khó chịu?
+*Ứng dụng đầu tiên tại Việt Nam cung cấp thông tin về các chương trình khuyến mãi giá trị thẻ nạp của 3 nhà mạng: Vina, Mobi &amp; Viettel. Không “Quảng Cáo”, Không “Spam”.
+*Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thông báo. Widget giúp bạn xem nhanh khuyến mãi mà không cần mở ứng dụng.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -147,7 +336,7 @@ Email: daoduyquang91@gmail.com</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3h1-UI-u0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="-337"/>
+            <point key="canvasLocation" x="850" y="-331"/>
         </scene>
         <!--Khuyến Mãi 50%-->
         <scene sceneID="tne-QT-ifu">
@@ -161,8 +350,8 @@ Email: daoduyquang91@gmail.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-ex-gMB">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-ex-gMB">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="J0G-a5-guG">
                                     <rect key="frame" x="0.0" y="64" width="328" height="84"/>
@@ -176,7 +365,7 @@ Email: daoduyquang91@gmail.com</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="aiI-HF-nwR" secondAttribute="bottom" id="3P0-JR-EeM"/>
                                         <constraint firstItem="aiI-HF-nwR" firstAttribute="top" secondItem="J0G-a5-guG" secondAttribute="top" id="ek0-Xj-WR5"/>
@@ -184,18 +373,64 @@ Email: daoduyquang91@gmail.com</string>
                                         <constraint firstAttribute="trailing" secondItem="aiI-HF-nwR" secondAttribute="trailing" constant="8" id="sCy-40-qW9"/>
                                     </constraints>
                                 </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="IbS-Fz-QeC">
+                                    <rect key="frame" x="0.0" y="148" width="328" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ4-0x-21B">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="46"/>
+                                            <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="128" id="4e0-sB-tK3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                            <state key="normal" title="Trang Facebook">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnFb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PEX-Fm-jcF"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tham gia thảo luận &amp; góp ý về KM50 trên Facebook" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYO-Rf-nEg">
+                                            <rect key="frame" x="136" y="0.0" width="171" height="46"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="oYO-Rf-nEg" firstAttribute="top" secondItem="IbS-Fz-QeC" secondAttribute="top" id="HkH-qW-ByJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="oYO-Rf-nEg" secondAttribute="bottom" id="Ki6-Qt-yI9"/>
+                                        <constraint firstAttribute="trailing" secondItem="oYO-Rf-nEg" secondAttribute="trailing" constant="21" id="V3z-OT-Dnz"/>
+                                        <constraint firstItem="WQ4-0x-21B" firstAttribute="leading" secondItem="IbS-Fz-QeC" secondAttribute="leading" id="cjd-E0-SWK"/>
+                                        <constraint firstItem="oYO-Rf-nEg" firstAttribute="leading" secondItem="WQ4-0x-21B" secondAttribute="trailing" constant="8" id="gdT-x3-i4f"/>
+                                        <constraint firstItem="WQ4-0x-21B" firstAttribute="top" secondItem="IbS-Fz-QeC" secondAttribute="top" id="gvV-4B-CbP"/>
+                                        <constraint firstAttribute="bottom" secondItem="WQ4-0x-21B" secondAttribute="bottom" id="w2n-Hh-0Z1"/>
+                                    </constraints>
+                                </view>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="KTl-IX-DD4"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="hWT-Lu-GIG"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueq-2n-42J" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="EHT-dI-CIQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="OcW-78-Fuy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="h0N-ex-gMB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0MS-c3-dSV"/>
+                            <constraint firstItem="ueq-2n-42J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76V-4a-waG"/>
                             <constraint firstItem="h0N-ex-gMB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="PPp-jl-yGv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h0N-ex-gMB" secondAttribute="trailing" constant="-20" id="WPp-og-Ge0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h0N-ex-gMB" secondAttribute="bottom" id="YGr-yp-z61"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h0N-ex-gMB" secondAttribute="bottom" constant="50" id="YGr-yp-z61"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ueq-2n-42J" secondAttribute="bottom" id="aqL-1x-PZO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2f4-BS-8uH">
@@ -203,9 +438,12 @@ Email: daoduyquang91@gmail.com</string>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bannerView" destination="ueq-2n-42J" id="8MR-V5-lmG"/>
                         <outlet property="tableView" destination="h0N-ex-gMB" id="Gev-Wk-PDg"/>
                         <segue destination="Idk-Vv-Fhy" kind="show" identifier="info" id="lL7-0s-6Sm"/>
                         <segue destination="ME1-po-Qr6" kind="show" identifier="wg" id="dWR-qr-xbT"/>
+                        <segue destination="Tc4-vl-N5W" kind="show" identifier="tuychon" id="Ndc-Ac-CPY"/>
+                        <segue destination="lFa-Tq-HJp" kind="show" identifier="gop" id="kKR-vM-nMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -342,7 +580,7 @@ Email: daoduyquang91@gmail.com</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfv-LX-WXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="-337"/>
+            <point key="canvasLocation" x="1318" y="-331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jpt-j3-p0m">

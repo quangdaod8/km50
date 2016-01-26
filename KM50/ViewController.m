@@ -12,16 +12,34 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID = @"ca-app-pub-9719677587937425/2666256995";
+    self.bannerView.rootViewController = self;
+    GADRequest *request = [GADRequest request];
+    //request.testDevices = @[ @"6bccd7746cf0ea0584ba0e7444001644" ];
+    [self.bannerView loadRequest:request];
+    
+    NSUserDefaults *isfirst = [NSUserDefaults standardUserDefaults];
+    if(![isfirst boolForKey:@"isfirst"]) {
+        NSArray *channels = [NSArray arrayWithObjects:@"viettel", @"mobifone", @"vinaphone", nil];
+        PFInstallation *install = [PFInstallation currentInstallation];
+        [install setChannels:channels];
+        [install saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            [isfirst setBool:YES forKey:@"isfirst"];
+            [isfirst synchronize];
+        }];
+    }
 
     self.navigationItem.title = @"KM50";
     if(![[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
         [self AlertWithTitle:@"Cho Phép Thông Báo" Messenger:@"Vui lòng cho phép thông báo để hệ thống có thể tự động gửi thông báo ngay khi có chương trình khuyến mãi" Butontitle:@"Ok"];
     } 
 
-    UIBarButtonItem *info = [[UIBarButtonItem alloc]initWithTitle:@"Thông tin" style:UIBarButtonItemStylePlain  target:self action:@selector(info)];
+    UIBarButtonItem *info = [[UIBarButtonItem alloc]initWithTitle:@"Cài Đặt" style:UIBarButtonItemStylePlain  target:self action:@selector(info)];
     self.navigationItem.leftBarButtonItem = info;
     [self.navigationItem.leftBarButtonItem setEnabled:NO];
         
@@ -42,7 +60,10 @@
             [_tableView reloadData];
         }
         else {
-            [self AlertWithTitle:@"Lỗi Mạng" Messenger:@"Vui lòng kiểm tra kết nối Internet." Butontitle:@"Ok"];
+            if(error.code == 100) [self AlertWithTitle:@"Lỗi Kết Nối" Messenger:@"Vui lòng kiểm tra kết nối Internet." Butontitle:@"Ok"]; else {
+                NSString *s = [NSString stringWithFormat:@"Vui lòng cung cấp mã lỗi này cho nhà phát triển:\nERROR_CODE: %@",error.localizedDescription];
+                [self AlertWithTitle:@"Lỗi Kết Nối" Messenger:s Butontitle:@"Ok"];
+            }
         }
     }];
     
@@ -62,6 +83,7 @@
 
 -(CustomCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if(_array.count > 0) [cell setDataByNetworkData:_array[indexPath.row]];
     return cell;
 }
@@ -78,7 +100,33 @@
     [self performSegueWithIdentifier:@"wg" sender:self];
 }
 -(void)info {
-    [self performSegueWithIdentifier:@"info" sender:self];
+    UIAlertController *menu = [UIAlertController alertControllerWithTitle:@"Cài Đặt" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *huy = [UIAlertAction actionWithTitle:@"Huỷ" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [menu dismissViewControllerAnimated:YES completion:nil];
+    }];
+    UIAlertAction *tuy = [UIAlertAction actionWithTitle:@"Tuỳ Chọn Thông Báo" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self performSegueWithIdentifier:@"tuychon" sender:self];
+    }];
+    UIAlertAction *info = [UIAlertAction actionWithTitle:@"Thông Tin" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self performSegueWithIdentifier:@"info" sender:self];
+    }];
+    UIAlertAction *gop = [UIAlertAction actionWithTitle:@"Quyên Góp" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self performSegueWithIdentifier:@"gop" sender:self];
+    }];
+
+    [menu addAction:tuy];
+    [menu addAction:info];
+    [menu addAction:gop];
+    [menu addAction:huy];
+    [self presentViewController:menu animated:YES completion:nil];
+    
+}
+
+- (IBAction)btnFb:(id)sender {
+    NSURL *urlApp = [NSURL URLWithString:@"fb://profile/1130451813656422"];
+    NSURL *urlSa = [NSURL URLWithString:@"https://www.facebook.com/km50app"];
+    if ([[UIApplication sharedApplication] canOpenURL:urlApp]) [[UIApplication sharedApplication] openURL:urlApp];
+    else [[UIApplication sharedApplication] openURL:urlSa];
 }
 
 @end

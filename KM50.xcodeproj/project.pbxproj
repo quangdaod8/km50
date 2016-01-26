@@ -53,8 +53,17 @@
 		D6EED2641C3B585800813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2621C3B585800813889 /* Bolts.framework */; };
 		D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2661C3B587500813889 /* Bolts.framework */; };
 		DB279C5E1C3D4B550043F889 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = DB279C5D1C3D4B550043F889 /* Info.m */; };
-		DB4D5D281C4333370052DEF2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4D5D271C4333370052DEF2 /* Parse.framework */; };
 		DB6BE6141C3E90CD00799984 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6BE6131C3E90CD00799984 /* Parse.framework */; };
+		DB9B62621C526E1700022881 /* OptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9B62611C526E1700022881 /* OptionView.m */; };
+		DBBD01DC1C57BFB70093B0FC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */; };
+		DBBD01DE1C57BFDA0093B0FC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DD1C57BFDA0093B0FC /* AdSupport.framework */; };
+		DBBD01E01C57BFEF0093B0FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DF1C57BFEF0093B0FC /* AVFoundation.framework */; };
+		DBBD01E21C57BFFD0093B0FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E11C57BFFD0093B0FC /* CoreMedia.framework */; };
+		DBBD01E41C57C00A0093B0FC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E31C57C00A0093B0FC /* CoreTelephony.framework */; };
+		DBBD01E61C57C0170093B0FC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E51C57C0170093B0FC /* EventKit.framework */; };
+		DBBD01E81C57C0260093B0FC /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E71C57C0260093B0FC /* EventKitUI.framework */; };
+		DBBD01EA1C57C0300093B0FC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E91C57C0300093B0FC /* MessageUI.framework */; };
+		DBBD01EC1C57C1110093B0FC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01EB1C57C1110093B0FC /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,8 +141,18 @@
 		D6EED2661C3B587500813889 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DB279C5C1C3D4B550043F889 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		DB279C5D1C3D4B550043F889 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
-		DB4D5D271C4333370052DEF2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DB6BE6131C3E90CD00799984 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DB9B62601C526E1700022881 /* OptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionView.h; sourceTree = "<group>"; };
+		DB9B62611C526E1700022881 /* OptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionView.m; sourceTree = "<group>"; };
+		DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		DBBD01DD1C57BFDA0093B0FC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DBBD01DF1C57BFEF0093B0FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DBBD01E11C57BFFD0093B0FC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DBBD01E31C57C00A0093B0FC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DBBD01E51C57C0170093B0FC /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		DBBD01E71C57C0260093B0FC /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		DBBD01E91C57C0300093B0FC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DBBD01EB1C57C1110093B0FC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +160,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D622D3281C3A1BCF002DB8BF /* StoreKit.framework in Frameworks */,
+				DBBD01EA1C57C0300093B0FC /* MessageUI.framework in Frameworks */,
+				DBBD01E81C57C0260093B0FC /* EventKitUI.framework in Frameworks */,
+				DBBD01E61C57C0170093B0FC /* EventKit.framework in Frameworks */,
+				DBBD01E41C57C00A0093B0FC /* CoreTelephony.framework in Frameworks */,
+				DBBD01E21C57BFFD0093B0FC /* CoreMedia.framework in Frameworks */,
+				DBBD01E01C57BFEF0093B0FC /* AVFoundation.framework in Frameworks */,
+				DBBD01DE1C57BFDA0093B0FC /* AdSupport.framework in Frameworks */,
 				D622D32E1C3A1BF2002DB8BF /* libsqlite3.tbd in Frameworks */,
 				D622D32C1C3A1BE6002DB8BF /* libz.tbd in Frameworks */,
+				DBBD01DC1C57BFB70093B0FC /* GoogleMobileAds.framework in Frameworks */,
 				D622D32A1C3A1BDB002DB8BF /* SystemConfiguration.framework in Frameworks */,
-				D622D3281C3A1BCF002DB8BF /* StoreKit.framework in Frameworks */,
 				D622D3261C3A1BC1002DB8BF /* Security.framework in Frameworks */,
 				D622D3241C3A1BB8002DB8BF /* QuartzCore.framework in Frameworks */,
 				D622D3221C3A1BAC002DB8BF /* CoreLocation.framework in Frameworks */,
@@ -170,7 +197,7 @@
 				D6EED2461C3AE7DD00813889 /* libz.tbd in Frameworks */,
 				D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */,
 				D6EED2451C3AE7C600813889 /* CFNetwork.framework in Frameworks */,
-				DB4D5D281C4333370052DEF2 /* Parse.framework in Frameworks */,
+				DBBD01EC1C57C1110093B0FC /* Parse.framework in Frameworks */,
 				D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +255,14 @@
 		D622D3161C3A1B4E002DB8BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBBD01E91C57C0300093B0FC /* MessageUI.framework */,
+				DBBD01E71C57C0260093B0FC /* EventKitUI.framework */,
+				DBBD01E51C57C0170093B0FC /* EventKit.framework */,
+				DBBD01E31C57C00A0093B0FC /* CoreTelephony.framework */,
+				DBBD01E11C57BFFD0093B0FC /* CoreMedia.framework */,
+				DBBD01DF1C57BFEF0093B0FC /* AVFoundation.framework */,
+				DBBD01DD1C57BFDA0093B0FC /* AdSupport.framework */,
+				DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */,
 				DB6BE6131C3E90CD00799984 /* Parse.framework */,
 				D6EED2621C3B585800813889 /* Bolts.framework */,
 				D622D32D1C3A1BF2002DB8BF /* libsqlite3.tbd */,
@@ -280,6 +315,7 @@
 		D622D3381C3A2255002DB8BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DB9B625C1C526D7D00022881 /* Option */,
 				DB279C5F1C3D4B590043F889 /* Info */,
 				D6EED2561C3B15AB00813889 /* Tut */,
 				D6EED2551C3B15A100813889 /* Setting */,
@@ -327,7 +363,7 @@
 		D6EED2331C3ADA9700813889 /* Khuyen Mai */ = {
 			isa = PBXGroup;
 			children = (
-				DB4D5D271C4333370052DEF2 /* Parse.framework */,
+				DBBD01EB1C57C1110093B0FC /* Parse.framework */,
 				D6EED2661C3B587500813889 /* Bolts.framework */,
 				D6EED2341C3ADA9700813889 /* TodayViewController.h */,
 				D6EED2351C3ADA9700813889 /* TodayViewController.m */,
@@ -371,6 +407,15 @@
 				DB279C5D1C3D4B550043F889 /* Info.m */,
 			);
 			name = Info;
+			sourceTree = "<group>";
+		};
+		DB9B625C1C526D7D00022881 /* Option */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B62601C526E1700022881 /* OptionView.h */,
+				DB9B62611C526E1700022881 /* OptionView.m */,
+			);
+			name = Option;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +532,7 @@
 				D622D3071C3A179A002DB8BF /* ViewController.m in Sources */,
 				D622D3041C3A179A002DB8BF /* AppDelegate.m in Sources */,
 				D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */,
+				DB9B62621C526E1700022881 /* OptionView.m in Sources */,
 				D622D33D1C3A28D0002DB8BF /* CustomCell.m in Sources */,
 				D622D3501C3A3368002DB8BF /* networkData.m in Sources */,
 				DB279C5E1C3D4B550043F889 /* Info.m in Sources */,
@@ -629,6 +675,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KM50",
@@ -648,6 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KM50",
@@ -666,8 +714,19 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
@@ -718,8 +777,19 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",

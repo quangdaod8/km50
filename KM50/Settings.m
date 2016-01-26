@@ -81,6 +81,7 @@
     [query whereKey:@"deviceToken" equalTo:install.deviceToken];
     [push setQuery:query];
     [push setData:data];
+    [push expireAfterTimeInterval:86400];
     [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
     }];
@@ -89,13 +90,51 @@
 
 
 - (IBAction)btnSend:(id)sender {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     PFPush *push = [[PFPush alloc]init];
     NSDictionary *data = @{ @"alert" : _txtPush.text , @"badge" : @"Increment" };
     [push setData:data];
-    [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
-    }];
+    
+    NSMutableArray *channels = [[NSMutableArray alloc]init];
+    if(_swmobi.isOn) [channels addObject:@"mobifone"];
+    if(_swViettel.isOn) [channels addObject:@"viettel"];
+    if(_swVina.isOn) [channels addObject:@"vinaphone"];
+    if(channels.count > 0) {
+        
+        NSString *s = [[NSString alloc]init];
+        for(int i = 0; i < channels.count; i++) s = [s stringByAppendingString:[NSString stringWithFormat:@"%@, ", channels[i]]];
+        s = [NSString stringWithFormat:@"Thông báo này sẽ được gửi đến các thiết bị đăng ký nhà mạng: %@",s];
+        
+        UIAlertController *noti = [UIAlertController alertControllerWithTitle:@"Xác Nhận" message:s preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *gui = [UIAlertAction actionWithTitle:@"GỬI" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        [push setChannels:channels];
+        [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        }];
+        }];
+        
+        UIAlertAction *huy = [UIAlertAction actionWithTitle:@"HUỶ" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [noti dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [noti addAction:gui];
+        [noti addAction:huy];
+        [self presentViewController:noti animated:YES completion:nil];
+    }else {
+        UIAlertController *noti = [UIAlertController alertControllerWithTitle:@"Cảnh Báo" message:@"Thông báo này sẽ được gửi đến tất cả các thiêt bị! Bạn có chắc chắn không?" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *gui = [UIAlertAction actionWithTitle:@"GỬI ĐẾN TẤT CẢ CÁC THIẾT BỊ" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+            }];
+        }];
+        UIAlertAction *huy = [UIAlertAction actionWithTitle:@"HUỶ" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [noti dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [noti addAction:gui];
+        [noti addAction:huy];
+        [self presentViewController:noti animated:YES completion:nil];
+    }
 }
 -(void)saveData {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
