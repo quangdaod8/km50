@@ -20,8 +20,15 @@
     self.bannerView.adUnitID = @"ca-app-pub-9719677587937425/2666256995";
     self.bannerView.rootViewController = self;
     GADRequest *request = [GADRequest request];
-    //request.testDevices = @[ @"6bccd7746cf0ea0584ba0e7444001644" ];
+    //request.testDevices = @[ @"6bccd7746cf0ea0584ba0e7444001644"];
     [self.bannerView loadRequest:request];
+    
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9719677587937425/2504806596"];
+    GADRequest *request2 = [GADRequest request];
+    // Requests test ads on test devices.
+    //request2.testDevices = @[ @"6bccd7746cf0ea0584ba0e7444001644"];
+    self.interstitial.delegate = self;
+    [self.interstitial loadRequest:request2];
     
     NSUserDefaults *isfirst = [NSUserDefaults standardUserDefaults];
     if(![isfirst boolForKey:@"isfirst"]) {
@@ -127,6 +134,15 @@
     NSURL *urlSa = [NSURL URLWithString:@"https://www.facebook.com/km50app"];
     if ([[UIApplication sharedApplication] canOpenURL:urlApp]) [[UIApplication sharedApplication] openURL:urlApp];
     else [[UIApplication sharedApplication] openURL:urlSa];
+}
+-(void)hienqc {
+        if ([self.interstitial isReady]) {
+            [self.interstitial presentFromRootViewController:self];
+        }
+}
+
+- (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
+    [self hienqc];
 }
 
 @end

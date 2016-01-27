@@ -54,6 +54,7 @@
 		D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EED2661C3B587500813889 /* Bolts.framework */; };
 		DB279C5E1C3D4B550043F889 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = DB279C5D1C3D4B550043F889 /* Info.m */; };
 		DB6BE6141C3E90CD00799984 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6BE6131C3E90CD00799984 /* Parse.framework */; };
+		DB9A95581C588DAD000CB178 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9A95571C588DAD000CB178 /* Parse.framework */; };
 		DB9B62621C526E1700022881 /* OptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9B62611C526E1700022881 /* OptionView.m */; };
 		DBBD01DC1C57BFB70093B0FC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */; };
 		DBBD01DE1C57BFDA0093B0FC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DD1C57BFDA0093B0FC /* AdSupport.framework */; };
@@ -63,7 +64,6 @@
 		DBBD01E61C57C0170093B0FC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E51C57C0170093B0FC /* EventKit.framework */; };
 		DBBD01E81C57C0260093B0FC /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E71C57C0260093B0FC /* EventKitUI.framework */; };
 		DBBD01EA1C57C0300093B0FC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01E91C57C0300093B0FC /* MessageUI.framework */; };
-		DBBD01EC1C57C1110093B0FC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01EB1C57C1110093B0FC /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +142,7 @@
 		DB279C5C1C3D4B550043F889 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		DB279C5D1C3D4B550043F889 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		DB6BE6131C3E90CD00799984 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DB9A95571C588DAD000CB178 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DB9B62601C526E1700022881 /* OptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionView.h; sourceTree = "<group>"; };
 		DB9B62611C526E1700022881 /* OptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionView.m; sourceTree = "<group>"; };
 		DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -152,7 +153,6 @@
 		DBBD01E51C57C0170093B0FC /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		DBBD01E71C57C0260093B0FC /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		DBBD01E91C57C0300093B0FC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		DBBD01EB1C57C1110093B0FC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +197,7 @@
 				D6EED2461C3AE7DD00813889 /* libz.tbd in Frameworks */,
 				D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */,
 				D6EED2451C3AE7C600813889 /* CFNetwork.framework in Frameworks */,
-				DBBD01EC1C57C1110093B0FC /* Parse.framework in Frameworks */,
+				DB9A95581C588DAD000CB178 /* Parse.framework in Frameworks */,
 				D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +363,7 @@
 		D6EED2331C3ADA9700813889 /* Khuyen Mai */ = {
 			isa = PBXGroup;
 			children = (
-				DBBD01EB1C57C1110093B0FC /* Parse.framework */,
+				DB9A95571C588DAD000CB178 /* Parse.framework */,
 				D6EED2661C3B587500813889 /* Bolts.framework */,
 				D6EED2341C3ADA9700813889 /* TodayViewController.h */,
 				D6EED2351C3ADA9700813889 /* TodayViewController.m */,
@@ -761,6 +761,8 @@
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 				);
 				INFOPLIST_FILE = "Khuyen Mai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -780,6 +782,8 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",

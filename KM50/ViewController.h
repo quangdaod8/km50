@@ -13,10 +13,11 @@
 #import "NetworkService.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,GADInterstitialDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *array;
 @property(nonatomic, readonly) UIUserNotificationType types;
+@property(nonatomic, strong) GADInterstitial *interstitial;
 - (IBAction)btnFb:(id)sender;
 
 @property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
