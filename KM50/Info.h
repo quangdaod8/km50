@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "MBProgressHUD.h"
+#import <MessageUI/MessageUI.h>
 
-@interface Info : UIViewController
+@interface Info : UIViewController<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate>
 @property(assign,nonatomic) int i;
 - (IBAction)btnSetup:(id)sender;
 

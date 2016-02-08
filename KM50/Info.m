@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     _i = 0;
     self.navigationController.navigationBar.backItem.title = @" ";
+    UIBarButtonItem *gop = [[UIBarButtonItem alloc]initWithTitle:@"Liên Hệ" style:UIBarButtonItemStylePlain target:self action:@selector(gopy)];
+    self.navigationItem.rightBarButtonItem = gop;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -26,15 +28,100 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)gopy {
+    UIAlertController *lh = [UIAlertController alertControllerWithTitle:@"" message:@"Liên hệ với Tác Giả" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *huy = [UIAlertAction actionWithTitle:@"Huỷ" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [lh dismissViewControllerAnimated:YES completion:nil];
+    }];
+    
+    UIAlertAction *sms = [UIAlertAction actionWithTitle:@"Gửi Tin Nhắn" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if([MFMessageComposeViewController canSendText]) {
+            MFMessageComposeViewController *tin = [[MFMessageComposeViewController alloc]init];
+            [tin setRecipients:[NSArray arrayWithObject:@"+841632652615"]];
+            [tin setBody:@""];
+            tin.messageComposeDelegate = self;
+            [self presentViewController:tin animated:YES completion:nil];
+        } else [self AlertWithTitle:@"Lỗi" Messenger:@"Không thể gửi tin nhắn trên thiết bị này" Butontitle:@"Ok"];
+    }];
+    
+    UIAlertAction *mail = [UIAlertAction actionWithTitle:@"Gửi Email" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if([MFMailComposeViewController canSendMail]) {
+            MFMailComposeViewController *mail = [[MFMailComposeViewController alloc]init];
+            [mail setSubject:@"Xin chào KM50"];
+            [mail setToRecipients:[NSArray arrayWithObject:@"daoduyquang91@gmail.com"]];
+            [mail setMessageBody:@"" isHTML:NO];
+            mail.mailComposeDelegate = self;
+            [self presentViewController:mail animated:YES completion:nil];
+        } else [self AlertWithTitle:@"Lỗi" Messenger:@"Vui lòng kiểm tra cài đặt Email" Butontitle:@"Ok"];
+    }];
+    
+    UIAlertAction *fb = [UIAlertAction actionWithTitle:@"Facebook" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSURL *urlApp = [NSURL URLWithString:@"fb://profile/quangmin91"];
+        NSURL *urlSa = [NSURL URLWithString:@"https://www.facebook.com/quangmin91"];
+        if ([[UIApplication sharedApplication] canOpenURL:urlApp]) [[UIApplication sharedApplication] openURL:urlApp];
+        else [[UIApplication sharedApplication] openURL:urlSa];
+    }];
+    [lh addAction:sms];
+    [lh addAction:mail];
+    [lh addAction:fb];
+    [lh addAction:huy];
+    [self presentViewController:lh animated:YES completion:nil];
 }
-*/
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+-(void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+    
+    switch (result) {
+        case MessageComposeResultCancelled:
+            break;
+            
+        case MessageComposeResultFailed:
+        {
+            break;
+        }
+            
+        case MessageComposeResultSent:
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)AlertWithTitle:(NSString*)title  Messenger:(NSString*)messenger  Butontitle:(NSString*)buttonTitle
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:messenger preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:buttonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *ok) {[alert dismissViewControllerAnimated:YES completion:nil];}];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 - (IBAction)btnSetup:(id)sender {
     _i++;

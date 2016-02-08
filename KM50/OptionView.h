@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 #import <Parse/Parse.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface OptionView : UITableViewController
 @property (weak, nonatomic) IBOutlet UISwitch *swViettel;
 
 @property (weak, nonatomic) IBOutlet UISwitch *swMobi;
 @property (weak, nonatomic) IBOutlet UISwitch *swVina;
+@property (strong, nonatomic) GADInterstitial *fullAd;
 
 @end

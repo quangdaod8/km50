@@ -13,6 +13,7 @@
 @property(strong, nonatomic) NSString* network;
 @property(strong, nonatomic) NSString* message;
 @property(strong, nonatomic) NSString* notnow;
+@property(strong, nonatomic) NSString* detail;
 @property(assign, nonatomic) BOOL isKm;
 
 @end

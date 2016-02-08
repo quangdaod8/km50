@@ -18,10 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
         // [Optional] Power your app with Local Datastore. For more info, go to
-    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0f green:0.22f blue:122.0/255.0 alpha:1.0f]];
-    [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]}];
-    
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:1 green:0.2 blue:0.4 alpha:1]];
+    //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:1 green:0.2 blue:0.4 alpha:1]}];
     [[UIApplication sharedApplication] currentUserNotificationSettings];
     
     

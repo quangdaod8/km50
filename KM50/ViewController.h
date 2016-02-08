@@ -12,16 +12,17 @@
 #import <Parse/Parse.h>
 #import "NetworkService.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
+#import "Detail.h"
+#import <MessageUI/MessageUI.h>
 
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,GADInterstitialDelegate>
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *array;
 @property(nonatomic, readonly) UIUserNotificationType types;
-@property(nonatomic, strong) GADInterstitial *interstitial;
-- (IBAction)btnFb:(id)sender;
 
 @property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
+@property (weak, nonatomic) IBOutlet UIView *header;
 
 
 @end

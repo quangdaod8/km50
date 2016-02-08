@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[MBProgressHUD showHUDAddedTo:self.view animated:YES];
+
+    _fullAd = [[GADInterstitial alloc]initWithAdUnitID:@"ca-app-pub-9719677587937425/2504806596"];
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[ @"ac236c724d7c99efa09ff9bf61a32c4a" ];
+    [self.fullAd loadRequest:request];
+    
     PFInstallation *install = [PFInstallation currentInstallation];
     NSArray *channels = [NSArray arrayWithArray:[install channels]];
     if([channels containsObject:@"viettel"]) [_swViettel setOn:YES animated:YES];
@@ -39,7 +44,7 @@
         if(!error) {
             UIAlertController *done = [UIAlertController alertControllerWithTitle:@"Đã Lưu" message:@"Đã lưu trạng thái đăng ký thành công" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                [done dismissViewControllerAnimated:YES completion:nil];
+                    if(_fullAd.isReady) [_fullAd presentFromRootViewController:self];
             }];
             [done addAction:ok];
             [self presentViewController:done animated:YES completion:nil];

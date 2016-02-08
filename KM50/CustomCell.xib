@@ -23,10 +23,9 @@
                             <constraint firstAttribute="width" secondItem="krB-2U-7Re" secondAttribute="height" multiplier="76:65" id="aVR-wI-xjL"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0w-Ca-a4q">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0w-Ca-a4q">
                         <rect key="frame" x="154" y="8" width="330" height="113"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -34,7 +33,7 @@
                     <constraint firstAttribute="topMargin" secondItem="krB-2U-7Re" secondAttribute="top" id="Jf2-gO-Arq"/>
                     <constraint firstAttribute="leadingMargin" secondItem="krB-2U-7Re" secondAttribute="leading" constant="-5" id="R9y-Ak-gaq"/>
                     <constraint firstAttribute="topMargin" secondItem="E0w-Ca-a4q" secondAttribute="top" id="X7k-IU-Qgb"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="E0w-Ca-a4q" secondAttribute="trailing" id="dj4-KT-Nln"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="E0w-Ca-a4q" secondAttribute="trailing" id="dXq-Ms-8rg"/>
                     <constraint firstAttribute="bottomMargin" secondItem="krB-2U-7Re" secondAttribute="bottom" constant="1" id="upt-rw-dvN"/>
                     <constraint firstAttribute="bottomMargin" secondItem="E0w-Ca-a4q" secondAttribute="bottom" constant="1" id="wjN-sp-E2e"/>
                     <constraint firstItem="E0w-Ca-a4q" firstAttribute="leading" secondItem="krB-2U-7Re" secondAttribute="trailing" constant="8" id="zfl-iY-KK6"/>
