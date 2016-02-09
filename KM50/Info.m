@@ -15,6 +15,11 @@
 @implementation Info
 
 - (void)viewDidLoad {
+    
+    _btnAva.clipsToBounds = YES;
+    _btnAva.layer.borderWidth = 0.5;
+    _btnAva.layer.cornerRadius = 50;
+    _btnAva.layer.borderColor = [[UIColor lightGrayColor]CGColor];
     _i = 0;
     self.navigationController.navigationBar.backItem.title = @" ";
     UIBarButtonItem *gop = [[UIBarButtonItem alloc]initWithTitle:@"Liên Hệ" style:UIBarButtonItemStylePlain target:self action:@selector(gopy)];

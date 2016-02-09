@@ -31,8 +31,8 @@
                                     <constraint firstAttribute="height" constant="21" id="5yY-Vu-sIO"/>
                                     <constraint firstAttribute="width" constant="246" id="uLX-pj-je8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thêm widget &quot;Khuyến Mãi&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-2I-Kf5">
@@ -41,8 +41,8 @@
                                     <constraint firstAttribute="height" constant="21" id="LTK-vu-hkB"/>
                                     <constraint firstAttribute="width" constant="246" id="RKe-1r-P6a"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8vu-C7-YbV">
@@ -129,7 +129,7 @@
                                                     <rect key="frame" x="8" y="8" width="304" height="86"/>
                                                     <string key="text">Lựa chọn nhà mạng mà bạn quan tâm. Hệ thống sẽ gửi thông báo 2 lần trong ngày có khuyến mãi (lúc 8h &amp; 19h).
 Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Widget &amp; bên trong App.</string>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -246,36 +246,33 @@ Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Wid
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-YD-WRN">
-                                <rect key="frame" x="16" y="485" width="288" height="63"/>
-                                <string key="text">Nhà Phát Triển: Đào Duy Quang
+                                <rect key="frame" x="16" y="180" width="288" height="72"/>
+                                <string key="text">Đào Duy Quang
 Viện Toán Ứng Dụng &amp; Tin Học trường Đại Học Bách Khoa Hà Nội
 Email: daoduyquang91@gmail.com</string>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-Cc-rX2">
-                                <rect key="frame" x="122" y="79" width="76" height="76"/>
+                                <rect key="frame" x="110" y="72" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="0pQ-SO-sGy"/>
-                                    <constraint firstAttribute="height" constant="76" id="2vF-Wh-cBv"/>
+                                    <constraint firstAttribute="width" constant="100" id="GNt-kK-Dxa"/>
+                                    <constraint firstAttribute="height" constant="100" id="NFk-ag-Q12"/>
                                 </constraints>
-                                <state key="normal" image="Icon-76.png" backgroundImage="Icon-76.png"/>
+                                <state key="normal" backgroundImage="IMG_4938.png"/>
                                 <connections>
                                     <action selector="btnSetup:" destination="Idk-Vv-Fhy" eventType="touchUpInside" id="BWb-An-eyo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khuyến mãi liền tay - Nạp ngay kẻo lỡ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-0M-Tw5">
-                                <rect key="frame" x="16" y="163" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-Nj-Uob">
-                                <rect key="frame" x="12" y="186" width="296" height="172"/>
-                                <string key="text">*Không phải lúc nào máy bạn cũng nhận được tin nhắn khuyến mãi nạp thẻ. Nhà mạng thường kèm thêm các tin quảng cáo làm bạn khó chịu?
-*Ứng dụng đầu tiên tại Việt Nam cung cấp thông tin về các chương trình khuyến mãi giá trị thẻ nạp của 3 nhà mạng: Vina, Mobi &amp; Viettel. Không “Quảng Cáo”, Không “Spam”.
-*Ngay khi có thông tin khuyến mãi hệ thống sẽ tự động gửi thông báo. Widget giúp bạn xem nhanh khuyến mãi mà không cần mở ứng dụng.</string>
+                                <rect key="frame" x="16" y="260" width="288" height="249"/>
+                                <mutableString key="text">Ý kiến, góp ý của bạn về KM50 sẽ được mình tiếp thu &amp; xem xét cẩn thận để tối ưu vào những bản cập nhật sau này. Để KM50 ngày càng thân thiện, dễ sử dụng &amp; phát triển hơn nữa.
+Vì tài chính cá nhân eo hẹp nên mình không có chi phí quảng bá KM50. Nếu thấy hay thì cùng chia sẻ cho bạn bè &amp; người thân cùng sử dụng KM50 nhé, cám ơn bạn.
+Ngoài ra nếu bạn muốn chia sẻ những ý tưởng tốt về những tiện ích đơn giản, hữu ích như KM50 thì mình luôn sẵn sàng lắng nghe.
+
+Trân trọng.
+</mutableString>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -283,21 +280,19 @@ Email: daoduyquang91@gmail.com</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lge-bI-xn7" firstAttribute="top" secondItem="SYj-YD-WRN" secondAttribute="bottom" constant="20" id="2f9-oY-Gs6"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="R7q-0M-Tw5" secondAttribute="leading" id="8c1-h4-ucp"/>
-                            <constraint firstItem="3Rb-Nj-Uob" firstAttribute="leading" secondItem="Xqu-FA-fDr" secondAttribute="leadingMargin" constant="-4" id="FLp-KR-j9c"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SYj-YD-WRN" secondAttribute="trailing" id="NOE-iw-lu8"/>
-                            <constraint firstItem="R7q-0M-Tw5" firstAttribute="top" secondItem="ahV-Cc-rX2" secondAttribute="bottom" constant="8" id="ZJP-aN-7vi"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="SYj-YD-WRN" secondAttribute="leading" id="dpO-xh-Rrc"/>
-                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="top" secondItem="fn3-7M-sVb" secondAttribute="bottom" constant="15" id="fCp-xz-ZKT"/>
-                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="centerX" secondItem="Xqu-FA-fDr" secondAttribute="centerX" id="g8I-JO-Mof"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="trailing" constant="-4" id="opH-Ik-b7f"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="R7q-0M-Tw5" secondAttribute="trailing" id="tZZ-1U-QmE"/>
-                            <constraint firstItem="3Rb-Nj-Uob" firstAttribute="top" secondItem="R7q-0M-Tw5" secondAttribute="bottom" constant="2" id="wfc-Vv-5Cv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="trailing" id="4re-w4-MEa"/>
+                            <constraint firstItem="SYj-YD-WRN" firstAttribute="top" secondItem="ahV-Cc-rX2" secondAttribute="bottom" constant="8" id="4tl-lz-pWV"/>
+                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="top" secondItem="fn3-7M-sVb" secondAttribute="bottom" constant="8" id="5kX-eI-Elk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SYj-YD-WRN" secondAttribute="trailing" id="EBI-sw-MvI"/>
+                            <constraint firstItem="ahV-Cc-rX2" firstAttribute="centerX" secondItem="Xqu-FA-fDr" secondAttribute="centerX" id="I9o-8r-fBX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3Rb-Nj-Uob" secondAttribute="leading" id="bHE-dq-kNP"/>
+                            <constraint firstItem="3Rb-Nj-Uob" firstAttribute="top" secondItem="SYj-YD-WRN" secondAttribute="bottom" constant="8" id="e7l-Sh-c60"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="SYj-YD-WRN" secondAttribute="leading" id="kdw-J1-qeZ"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="btnAva" destination="ahV-Cc-rX2" id="lKe-Vy-0ID"/>
                         <segue destination="ymY-ae-fSL" kind="show" identifier="setup" id="USa-Q6-AjU"/>
                     </connections>
                 </viewController>
@@ -332,7 +327,6 @@ Email: daoduyquang91@gmail.com</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="aiI-HF-nwR" secondAttribute="bottom" id="3P0-JR-EeM"/>
                                         <constraint firstItem="aiI-HF-nwR" firstAttribute="top" secondItem="J0G-a5-guG" secondAttribute="top" id="ek0-Xj-WR5"/>
@@ -374,7 +368,7 @@ Email: daoduyquang91@gmail.com</string>
                         <outlet property="tableView" destination="h0N-ex-gMB" id="Gev-Wk-PDg"/>
                         <segue destination="ME1-po-Qr6" kind="show" identifier="wg" id="dWR-qr-xbT"/>
                         <segue destination="aon-3W-oLA" kind="show" identifier="detail" id="cAi-Lv-6FF"/>
-                        <segue destination="52k-66-Wie" kind="show" identifier="caidat" id="zpR-yP-HbR"/>
+                        <segue destination="52k-66-Wie" kind="presentation" identifier="caidat" id="zpR-yP-HbR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -524,15 +518,15 @@ Email: daoduyquang91@gmail.com</string>
                         <sections>
                             <tableViewSection id="EEL-Tl-xGO">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KDP-Kn-oBl" style="IBUITableViewCellStyleDefault" id="BE0-uv-rv3">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KDP-Kn-oBl" rowHeight="60" style="IBUITableViewCellStyleDefault" id="BE0-uv-rv3">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BE0-uv-rv3" id="jCB-7s-z3x">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Vinaphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KDP-Kn-oBl">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -541,15 +535,15 @@ Email: daoduyquang91@gmail.com</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xIa-9Z-ofj" style="IBUITableViewCellStyleDefault" id="F7Y-R3-Ln3">
-                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xIa-9Z-ofj" rowHeight="60" style="IBUITableViewCellStyleDefault" id="F7Y-R3-Ln3">
+                                        <rect key="frame" x="0.0" y="124" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F7Y-R3-Ln3" id="NCK-dc-Wxb">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mobifone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xIa-9Z-ofj">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -558,15 +552,15 @@ Email: daoduyquang91@gmail.com</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qbj-jT-0Cl" style="IBUITableViewCellStyleDefault" id="0Xb-hC-HOd">
-                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qbj-jT-0Cl" rowHeight="60" style="IBUITableViewCellStyleDefault" id="0Xb-hC-HOd">
+                                        <rect key="frame" x="0.0" y="184" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Xb-hC-HOd" id="T9Y-s9-vN5">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Viettel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qbj-jT-0Cl">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -575,15 +569,15 @@ Email: daoduyquang91@gmail.com</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9Mj-BW-pBO" style="IBUITableViewCellStyleDefault" id="WfQ-f1-S7m">
-                                        <rect key="frame" x="0.0" y="196" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9Mj-BW-pBO" rowHeight="60" style="IBUITableViewCellStyleDefault" id="WfQ-f1-S7m">
+                                        <rect key="frame" x="0.0" y="244" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WfQ-f1-S7m" id="beJ-w0-DNa">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Widget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Mj-BW-pBO">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -592,25 +586,25 @@ Email: daoduyquang91@gmail.com</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="yLW-pV-ujX" detailTextLabel="VQ3-ox-Avg" style="IBUITableViewCellStyleSubtitle" id="ho2-E5-ycg">
-                                        <rect key="frame" x="0.0" y="240" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="yLW-pV-ujX" detailTextLabel="VQ3-ox-Avg" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="ho2-E5-ycg">
+                                        <rect key="frame" x="0.0" y="304" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ho2-E5-ycg" id="hZC-FC-G2N">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Push Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yLW-pV-ujX">
-                                                    <rect key="frame" x="15" y="5" width="124" height="20"/>
+                                                    <rect key="frame" x="15" y="13" width="124" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Gửi thông báo đến các thiết bị" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VQ3-ox-Avg">
-                                                    <rect key="frame" x="15" y="25" width="159" height="14"/>
+                                                    <rect key="frame" x="15" y="33" width="159" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -984,7 +978,7 @@ Email: daoduyquang91@gmail.com</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjY-hD-8Pl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="-67"/>
+            <point key="canvasLocation" x="1829" y="-67"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jpt-j3-p0m">
@@ -1027,6 +1021,6 @@ Email: daoduyquang91@gmail.com</string>
     <resources>
         <image name="1.png" width="640" height="524"/>
         <image name="2.png" width="640" height="526"/>
-        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="IMG_4938.png" width="950" height="950"/>
     </resources>
 </document>

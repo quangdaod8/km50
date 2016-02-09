@@ -110,11 +110,29 @@
             if(data.isKm) [tin setBody:data.message];
             else [tin setBody:data.notnow];
             tin.messageComposeDelegate = self;
-            [self presentViewController:tin animated:YES completion:nil];
+            [self presentViewController:tin animated:YES completion:^{
+                [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+            }];
         } else [self AlertWithTitle:@"Lỗi" Messenger:@"Không thể gửi tin nhắn trên thiết bị này" Butontitle:@"Ok"];
     }];
     modifyAction.backgroundColor = [UIColor greenColor];
-    return @[modifyAction];
+    
+    UITableViewRowAction *copy = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Copy" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        UIPasteboard *paster = [UIPasteboard generalPasteboard];
+        networkData *data = [[networkData alloc]init];
+        data = _array[indexPath.row];
+        paster.string = data.message;
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sao Chép" message:@"Đã sao chép vào bộ nhớ đệm." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ok) {[alert dismissViewControllerAnimated:YES completion:nil];
+            [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+        }];
+        [alert addAction:ok];
+        [self presentViewController:alert animated:YES completion:nil];
+    }];
+    copy.backgroundColor = [UIColor lightGrayColor];
+    
+    return @[modifyAction,copy];
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -158,6 +176,7 @@
 -(void)widget {
     [self performSegueWithIdentifier:@"wg" sender:self];
 }
+
 -(void)info {
     [self performSegueWithIdentifier:@"caidat" sender:self];
 }

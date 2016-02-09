@@ -14,6 +14,7 @@
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #import "Detail.h"
 #import <MessageUI/MessageUI.h>
+#import "Setting.h"
 
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

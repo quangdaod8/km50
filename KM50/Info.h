@@ -14,5 +14,6 @@
 @interface Info : UIViewController<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate>
 @property(assign,nonatomic) int i;
 - (IBAction)btnSetup:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnAva;
 
 @end
