@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [Parse setApplicationId:@"NUgdGclAIEmYcwu8HAisyHGbT5eIfguOz6ITSRXb" clientKey:@"WBYwmDqkwOC7FCixLKM083fcw3UM1nTXYOQCl4wt"];
+ 
+
         // Do any additional setup after loading the view from its nib.
 }
 
@@ -60,4 +62,8 @@
     return UIEdgeInsetsMake(5, 5, 5, 5);
 }
 
+
+- (IBAction)labelTap:(id)sender {
+    NSLog(@"ok");
+}
 @end

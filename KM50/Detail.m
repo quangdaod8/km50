@@ -56,7 +56,7 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)interstitialDidReceiveAd:(GADInterstitial *)ad {
-    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     [ad presentFromRootViewController:self];
 }
 -(void)interstitialDidDismissScreen:(GADInterstitial *)ad {

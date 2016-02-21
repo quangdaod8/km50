@@ -88,6 +88,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,10 +152,12 @@ Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Wid
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-yk-llh">
                                                     <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viettel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDB-Yd-Qm6">
                                                     <rect key="frame" x="8" y="11" width="52" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -175,10 +178,12 @@ Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Wid
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7VK-MU-fqS">
                                                     <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobifone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cND-fX-RAS">
                                                     <rect key="frame" x="8" y="11" width="76" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -199,10 +204,12 @@ Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Wid
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yTq-gH-Cb0">
                                                     <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vinaphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu1-Yj-Gnd">
                                                     <rect key="frame" x="8" y="11" width="87" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -251,7 +258,7 @@ Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Wid
 Viện Toán Ứng Dụng &amp; Tin Học trường Đại Học Bách Khoa Hà Nội
 Email: daoduyquang91@gmail.com</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-Cc-rX2">
@@ -260,19 +267,19 @@ Email: daoduyquang91@gmail.com</string>
                                     <constraint firstAttribute="width" constant="100" id="GNt-kK-Dxa"/>
                                     <constraint firstAttribute="height" constant="100" id="NFk-ag-Q12"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="IMG_4938.png"/>
+                                <state key="normal" backgroundImage="ava.jpg"/>
                                 <connections>
                                     <action selector="btnSetup:" destination="Idk-Vv-Fhy" eventType="touchUpInside" id="BWb-An-eyo"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-Nj-Uob">
                                 <rect key="frame" x="16" y="260" width="288" height="249"/>
-                                <mutableString key="text">Ý kiến, góp ý của bạn về KM50 sẽ được mình tiếp thu &amp; xem xét cẩn thận để tối ưu vào những bản cập nhật sau này. Để KM50 ngày càng thân thiện, dễ sử dụng &amp; phát triển hơn nữa.
+                                <string key="text">Ý kiến, góp ý của bạn về KM50 sẽ được mình tiếp thu &amp; xem xét cẩn thận để tối ưu vào những bản cập nhật sau này. Để KM50 ngày càng thân thiện, dễ sử dụng &amp; phát triển hơn nữa.
 Vì tài chính cá nhân eo hẹp nên mình không có chi phí quảng bá KM50. Nếu thấy hay thì cùng chia sẻ cho bạn bè &amp; người thân cùng sử dụng KM50 nhé, cám ơn bạn.
 Ngoài ra nếu bạn muốn chia sẻ những ý tưởng tốt về những tiện ích đơn giản, hữu ích như KM50 thì mình luôn sẵn sàng lắng nghe.
 
 Trân trọng.
-</mutableString>
+</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -374,138 +381,6 @@ Trân trọng.
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="850" y="312"/>
-        </scene>
-        <!--developer-->
-        <scene sceneID="9hD-XK-pcu">
-            <objects>
-                <viewController title="developer" id="lFs-Sy-Tcz" customClass="Settings" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PwK-Bf-GIs"/>
-                        <viewControllerLayoutGuide type="bottom" id="PJe-iZ-7kR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="af0-eS-8WK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Viettel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vXL-GM-f4O">
-                                <rect key="frame" x="12" y="28" width="239" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobifone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-8t-tAW">
-                                <rect key="frame" x="12" y="66" width="239" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vinaphone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tSA-FI-CLk">
-                                <rect key="frame" x="12" y="104" width="239" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thông báo đẩy" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="erP-rp-Nyo">
-                                <rect key="frame" x="12" y="180" width="296" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDh-se-BAu">
-                                <rect key="frame" x="12" y="218" width="89" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Xem Trước">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnTest:" destination="lFs-Sy-Tcz" eventType="touchUpInside" id="YF1-gI-ZxK"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tin Widget" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-l9-nEI">
-                                <rect key="frame" x="12" y="142" width="239" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-aa-6Z3">
-                                <rect key="frame" x="259" y="28" width="51" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="gcm-O6-P1P"/>
-                                    <constraint firstAttribute="height" constant="31" id="ibn-58-zIa"/>
-                                </constraints>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mfv-Ki-OR8">
-                                <rect key="frame" x="259" y="65" width="51" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="aeI-UU-s1m"/>
-                                    <constraint firstAttribute="width" constant="49" id="xuk-io-w3R"/>
-                                </constraints>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a4o-iv-t1W">
-                                <rect key="frame" x="259" y="103" width="51" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="bDh-ia-KRS"/>
-                                    <constraint firstAttribute="height" constant="31" id="zW0-g0-Cpi"/>
-                                </constraints>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRH-PB-pwq">
-                                <rect key="frame" x="171" y="218" width="137" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Gửi Thông Báo &gt;"/>
-                                <connections>
-                                    <action selector="btnSend:" destination="lFs-Sy-Tcz" eventType="touchUpInside" id="IRD-bN-PHs"/>
-                                </connections>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kn8-uK-hY1">
-                                <rect key="frame" x="259" y="142" width="51" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="d1F-np-HO8"/>
-                                    <constraint firstAttribute="width" constant="49" id="zkK-hv-Ea3"/>
-                                </constraints>
-                            </switch>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="erP-rp-Nyo" firstAttribute="top" secondItem="BrG-l9-nEI" secondAttribute="bottom" constant="8" id="1hZ-G4-DeO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xRH-PB-pwq" secondAttribute="trailing" constant="-4" id="3Q5-Tc-eUf"/>
-                            <constraint firstItem="vXL-GM-f4O" firstAttribute="top" secondItem="PwK-Bf-GIs" secondAttribute="bottom" constant="8" id="8Sy-PK-XCc"/>
-                            <constraint firstItem="kn8-uK-hY1" firstAttribute="top" secondItem="a4o-iv-t1W" secondAttribute="bottom" constant="8" id="Cgg-9T-DSD"/>
-                            <constraint firstItem="tSA-FI-CLk" firstAttribute="top" secondItem="Gkd-8t-tAW" secondAttribute="bottom" constant="8" id="FEa-8l-znm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mfv-Ki-OR8" secondAttribute="trailing" constant="-4" id="FVX-wa-zeS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="erP-rp-Nyo" secondAttribute="trailing" constant="-4" id="JV5-Pq-mV8"/>
-                            <constraint firstItem="o6e-aa-6Z3" firstAttribute="leading" secondItem="vXL-GM-f4O" secondAttribute="trailing" constant="8" id="K3i-fN-VvY"/>
-                            <constraint firstItem="o6e-aa-6Z3" firstAttribute="top" secondItem="PwK-Bf-GIs" secondAttribute="bottom" constant="8" id="KF5-cj-tyj"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="tSA-FI-CLk" secondAttribute="leading" constant="4" id="Ksz-1k-peL"/>
-                            <constraint firstItem="mfv-Ki-OR8" firstAttribute="top" secondItem="o6e-aa-6Z3" secondAttribute="bottom" constant="6" id="Ler-yU-OUP"/>
-                            <constraint firstItem="kn8-uK-hY1" firstAttribute="leading" secondItem="BrG-l9-nEI" secondAttribute="trailing" constant="8" id="O25-rz-aVs"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="YDh-se-BAu" secondAttribute="leading" constant="4" id="SXx-cB-u3B"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kn8-uK-hY1" secondAttribute="trailing" constant="-4" id="Tki-sl-C3g"/>
-                            <constraint firstItem="xRH-PB-pwq" firstAttribute="top" secondItem="erP-rp-Nyo" secondAttribute="bottom" constant="8" id="UhD-N8-WMa"/>
-                            <constraint firstItem="a4o-iv-t1W" firstAttribute="top" secondItem="mfv-Ki-OR8" secondAttribute="bottom" constant="7" id="VSI-w8-Mn2"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="vXL-GM-f4O" secondAttribute="leading" constant="4" id="WDS-gE-6zf"/>
-                            <constraint firstItem="BrG-l9-nEI" firstAttribute="top" secondItem="tSA-FI-CLk" secondAttribute="bottom" constant="8" id="YXg-kr-t0R"/>
-                            <constraint firstItem="mfv-Ki-OR8" firstAttribute="leading" secondItem="Gkd-8t-tAW" secondAttribute="trailing" constant="8" id="ZXS-yP-Vth"/>
-                            <constraint firstItem="a4o-iv-t1W" firstAttribute="leading" secondItem="tSA-FI-CLk" secondAttribute="trailing" constant="8" id="ZyD-X2-YVf"/>
-                            <constraint firstItem="Gkd-8t-tAW" firstAttribute="top" secondItem="vXL-GM-f4O" secondAttribute="bottom" constant="8" id="adf-uX-xDZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a4o-iv-t1W" secondAttribute="trailing" constant="-4" id="biX-SM-FVm"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Gkd-8t-tAW" secondAttribute="leading" constant="4" id="gRI-OU-4mp"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="erP-rp-Nyo" secondAttribute="leading" constant="4" id="i5W-Av-dJG"/>
-                            <constraint firstItem="YDh-se-BAu" firstAttribute="top" secondItem="erP-rp-Nyo" secondAttribute="bottom" constant="8" id="ibX-dA-qHK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o6e-aa-6Z3" secondAttribute="trailing" constant="-4" id="neJ-Sg-BmS"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="BrG-l9-nEI" secondAttribute="leading" constant="4" id="yqN-Mq-hy9"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="swViettel" destination="o6e-aa-6Z3" id="273-sd-Vlg"/>
-                        <outlet property="swVina" destination="a4o-iv-t1W" id="iZC-Yj-bqQ"/>
-                        <outlet property="swWidget" destination="kn8-uK-hY1" id="QLz-zk-Ack"/>
-                        <outlet property="swmobi" destination="mfv-Ki-OR8" id="8Rj-iw-2HQ"/>
-                        <outlet property="txtMobi" destination="Gkd-8t-tAW" id="oGu-2g-D98"/>
-                        <outlet property="txtPush" destination="erP-rp-Nyo" id="N4m-fE-9zB"/>
-                        <outlet property="txtViettel" destination="vXL-GM-f4O" id="GX0-6Z-NlY"/>
-                        <outlet property="txtVina" destination="tSA-FI-CLk" id="SoZ-fp-qWD"/>
-                        <outlet property="txtWidget" destination="BrG-l9-nEI" id="VNC-wb-6BH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfv-LX-WXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2572" y="-723"/>
         </scene>
         <!--Admin-->
         <scene sceneID="2RS-dQ-qvO">
@@ -847,14 +722,14 @@ Trân trọng.
                                                     <rect key="frame" x="15" y="11" width="84" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Lựa chọn nhà mạng để nhận thông báo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z3C-eO-iRD">
                                                     <rect key="frame" x="15" y="32" width="237" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -874,14 +749,14 @@ Trân trọng.
                                                     <rect key="frame" x="15" y="11" width="57" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Góp ý hoặc liên hệ trực tiếp với tác giả" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BA4-ll-xtH">
                                                     <rect key="frame" x="15" y="32" width="233" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -901,14 +776,14 @@ Trân trọng.
                                                     <rect key="frame" x="15" y="11" width="86" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quyên góp chi phí duy trì KM50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NYn-ae-gWd">
                                                     <rect key="frame" x="15" y="32" width="192" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -928,14 +803,14 @@ Trân trọng.
                                                     <rect key="frame" x="15" y="11" width="156" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Đánh giá &amp; nhận xét KM50 trên Appstore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hku-gk-FEA">
                                                     <rect key="frame" x="15" y="32" width="248" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -952,14 +827,38 @@ Trân trọng.
                                                     <rect key="frame" x="15" y="11" width="168" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mọi thông tin về KM50 sẽ cập nhật ở đây" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zt9-Tb-rfB">
                                                     <rect key="frame" x="15" y="32" width="248" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="kVv-eE-3ns" detailTextLabel="HQg-Lz-TwX" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="WsM-qb-nz0">
+                                        <rect key="frame" x="0.0" y="364" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WsM-qb-nz0" id="IY2-xf-VuY">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Ứng dụng hay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kVv-eE-3ns">
+                                                    <rect key="frame" x="15" y="11" width="107" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Ứng dụng hay &amp; hữu ích khác của tác giả" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HQg-Lz-TwX">
+                                                    <rect key="frame" x="15" y="32" width="248" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1021,6 +920,6 @@ Trân trọng.
     <resources>
         <image name="1.png" width="640" height="524"/>
         <image name="2.png" width="640" height="526"/>
-        <image name="IMG_4938.png" width="950" height="950"/>
+        <image name="ava.jpg" width="960" height="959"/>
     </resources>
 </document>

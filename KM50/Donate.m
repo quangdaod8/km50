@@ -19,7 +19,7 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     _service = [[NetworkService alloc]init];
     [_service getInfoByNetwork:@"widget" Completed:^(networkData *networkData, NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if(!error) {
             _txtMain.text = networkData.detail;
         } else _txtMain.text = @"Không thể tải thông tin\nVui lòng thử lại trong chốc lát";

@@ -32,7 +32,7 @@
     _service = [[NetworkService alloc]init];
     
     [_service getInfoByNetwork:_network Completed:^(networkData *networkData, NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if(!error) {
         [self.navigationItem.rightBarButtonItem setEnabled:YES];
         _txtNetwork.text = networkData.message;
@@ -59,7 +59,7 @@
 -(void)save {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [_service saveDataForNetwork:_network Message:_txtNetwork.text Detail:_txtNetworkDetail.text isKm:_swisKm.isOn Done:^(NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if(!error) [self AlertWithTitle:@"Xong" Messenger:@"Đã lưu" Butontitle:@"Ok"];
         else [self AlertWithTitle:@"Error" Messenger:[error localizedDescription] Butontitle:@"Ok"];
     }];

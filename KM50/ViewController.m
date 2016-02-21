@@ -54,12 +54,13 @@
     [self.navigationItem.rightBarButtonItem setEnabled:NO];
     
     _array = [[NSArray alloc]init];
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hub.backgroundColor = [UIColor whiteColor];
     [_tableView setUserInteractionEnabled:NO];
     
     NetworkService *service = [[NetworkService alloc]init];
     [service getDataForArray:^(NSArray *data, NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self.navigationItem.leftBarButtonItem setEnabled:YES];
         [self.navigationItem.rightBarButtonItem setEnabled:YES];
         if(!error) {

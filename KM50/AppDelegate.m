@@ -65,7 +65,7 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Store the deviceToken in the current Installation and save it to Parse
-    NSLog(@"push enabled");
+    NSLog(@"Device Token: %@",deviceToken);
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     if(currentInstallation.badge > 0) currentInstallation.badge = 0;
     [currentInstallation setDeviceTokenFromData:deviceToken];

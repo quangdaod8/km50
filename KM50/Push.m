@@ -36,7 +36,7 @@
     {
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         [_service sendPushTestMessage:_txtMessage.text Sent:^(NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
             if(error) [self AlertWithTitle:@"Error" Messenger:[error localizedDescription] Butontitle:@"Ok"];
     }];
     }else {
@@ -55,7 +55,7 @@
         UIAlertAction *gui = [UIAlertAction actionWithTitle:@"GỬI" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             [_service sendPushToChannels:channels Message:_txtMessage.text Sent:^(NSError *error) {
-                [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
                 if(error) [self AlertWithTitle:@"Error" Messenger:error.localizedDescription Butontitle:@"Ok"];
             }];
             

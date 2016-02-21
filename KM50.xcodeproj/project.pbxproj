@@ -27,7 +27,6 @@
 		D622D33D1C3A28D0002DB8BF /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D33B1C3A28D0002DB8BF /* CustomCell.m */; };
 		D622D33E1C3A28D0002DB8BF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D622D33C1C3A28D0002DB8BF /* CustomCell.xib */; };
 		D622D3481C3A2E4E002DB8BF /* viettel.png in Resources */ = {isa = PBXBuildFile; fileRef = D622D3471C3A2E4E002DB8BF /* viettel.png */; };
-		D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34C1C3A31A3002DB8BF /* MBProgressHUD.m */; };
 		D622D3501C3A3368002DB8BF /* networkData.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D34F1C3A3368002DB8BF /* networkData.m */; };
 		D622D3541C3A33DC002DB8BF /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = D622D3531C3A33DC002DB8BF /* NetworkService.m */; };
 		D69F45C51C3A470400697F97 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F45C41C3A470400697F97 /* Settings.m */; };
@@ -56,11 +55,12 @@
 		DB25A2BA1C67BAFF00F6AB91 /* NetworkDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = DB25A2B91C67BAFF00F6AB91 /* NetworkDetail.m */; };
 		DB279C5E1C3D4B550043F889 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = DB279C5D1C3D4B550043F889 /* Info.m */; };
 		DB30B8DC1C67E4140049E59C /* Push.m in Sources */ = {isa = PBXBuildFile; fileRef = DB30B8DB1C67E4140049E59C /* Push.m */; };
-		DB52CFA41C6A43EE00254F76 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB52CFA31C6A43EE00254F76 /* Parse.framework */; };
-		DB52CFA61C6A543600254F76 /* IMG_4938.png in Resources */ = {isa = PBXBuildFile; fileRef = DB52CFA51C6A543600254F76 /* IMG_4938.png */; };
+		DB67CE921C798D0400CBEC32 /* ava.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB67CE911C798D0400CBEC32 /* ava.jpg */; };
 		DB6BE6141C3E90CD00799984 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6BE6131C3E90CD00799984 /* Parse.framework */; };
 		DB9B62621C526E1700022881 /* OptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9B62611C526E1700022881 /* OptionView.m */; };
 		DB9F83C41C6654B4009BDA6D /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9F83C31C6654B4009BDA6D /* Admin.m */; };
+		DBA444751C79B8B0003B1C6E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA444741C79B8B0003B1C6E /* Parse.framework */; };
+		DBA444791C79B8F9003B1C6E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA444781C79B8F9003B1C6E /* MBProgressHUD.m */; };
 		DBBD01DC1C57BFB70093B0FC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */; };
 		DBBD01DE1C57BFDA0093B0FC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DD1C57BFDA0093B0FC /* AdSupport.framework */; };
 		DBBD01E01C57BFEF0093B0FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD01DF1C57BFEF0093B0FC /* AVFoundation.framework */; };
@@ -124,8 +124,6 @@
 		D622D33B1C3A28D0002DB8BF /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		D622D33C1C3A28D0002DB8BF /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		D622D3471C3A2E4E002DB8BF /* viettel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viettel.png; sourceTree = "<group>"; };
-		D622D34B1C3A31A3002DB8BF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		D622D34C1C3A31A3002DB8BF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		D622D34E1C3A3368002DB8BF /* networkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = networkData.h; sourceTree = "<group>"; };
 		D622D34F1C3A3368002DB8BF /* networkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = networkData.m; sourceTree = "<group>"; };
 		D622D3521C3A33DC002DB8BF /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
@@ -155,13 +153,15 @@
 		DB279C5D1C3D4B550043F889 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		DB30B8DA1C67E4140049E59C /* Push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Push.h; sourceTree = "<group>"; };
 		DB30B8DB1C67E4140049E59C /* Push.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Push.m; sourceTree = "<group>"; };
-		DB52CFA31C6A43EE00254F76 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		DB52CFA51C6A543600254F76 /* IMG_4938.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4938.png; sourceTree = "<group>"; };
+		DB67CE911C798D0400CBEC32 /* ava.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ava.jpg; sourceTree = "<group>"; };
 		DB6BE6131C3E90CD00799984 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DB9B62601C526E1700022881 /* OptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionView.h; sourceTree = "<group>"; };
 		DB9B62611C526E1700022881 /* OptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionView.m; sourceTree = "<group>"; };
 		DB9F83C21C6654B4009BDA6D /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
 		DB9F83C31C6654B4009BDA6D /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
+		DBA444741C79B8B0003B1C6E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DBA444771C79B8F9003B1C6E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DBA444781C79B8F9003B1C6E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		DBBD01DB1C57BFB70093B0FC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		DBBD01DD1C57BFDA0093B0FC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DBBD01DF1C57BFEF0093B0FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -219,7 +219,7 @@
 				D6EED2461C3AE7DD00813889 /* libz.tbd in Frameworks */,
 				D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */,
 				D6EED2451C3AE7C600813889 /* CFNetwork.framework in Frameworks */,
-				DB52CFA41C6A43EE00254F76 /* Parse.framework in Frameworks */,
+				DBA444751C79B8B0003B1C6E /* Parse.framework in Frameworks */,
 				D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +306,7 @@
 		D622D32F1C3A1FAA002DB8BF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				DB52CFA51C6A543600254F76 /* IMG_4938.png */,
+				DB67CE911C798D0400CBEC32 /* ava.jpg */,
 				DB25A2B51C67B54700F6AB91 /* menu.png */,
 				D6EED25A1C3B49B700813889 /* Icon-76@2x.png */,
 				D6EED24E1C3B14E000813889 /* 3.png */,
@@ -364,18 +364,9 @@
 		D622D3491C3A3196002DB8BF /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				D622D34A1C3A31A3002DB8BF /* MBProgressHUD */,
+				DBA444761C79B8F9003B1C6E /* MBProgressHUD */,
 			);
 			name = libs;
-			sourceTree = "<group>";
-		};
-		D622D34A1C3A31A3002DB8BF /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				D622D34B1C3A31A3002DB8BF /* MBProgressHUD.h */,
-				D622D34C1C3A31A3002DB8BF /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		D622D3511C3A33C1002DB8BF /* Service */ = {
@@ -390,7 +381,7 @@
 		D6EED2331C3ADA9700813889 /* Khuyen Mai */ = {
 			isa = PBXGroup;
 			children = (
-				DB52CFA31C6A43EE00254F76 /* Parse.framework */,
+				DBA444741C79B8B0003B1C6E /* Parse.framework */,
 				D6EED2661C3B587500813889 /* Bolts.framework */,
 				D6EED2341C3ADA9700813889 /* TodayViewController.h */,
 				D6EED2351C3ADA9700813889 /* TodayViewController.m */,
@@ -482,6 +473,15 @@
 				DB9F83C31C6654B4009BDA6D /* Admin.m */,
 			);
 			name = Admin;
+			sourceTree = "<group>";
+		};
+		DBA444761C79B8F9003B1C6E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DBA444771C79B8F9003B1C6E /* MBProgressHUD.h */,
+				DBA444781C79B8F9003B1C6E /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		DBC144F31C624C5C003265DE /* Details */ = {
@@ -593,9 +593,9 @@
 				D6EED25B1C3B49B700813889 /* Icon-76@2x.png in Resources */,
 				D6EED2511C3B14E000813889 /* 3.png in Resources */,
 				DB25A2B61C67B54700F6AB91 /* menu.png in Resources */,
+				DB67CE921C798D0400CBEC32 /* ava.jpg in Resources */,
 				D622D3331C3A1FB7002DB8BF /* mobi.png in Resources */,
 				D622D30A1C3A179A002DB8BF /* Main.storyboard in Resources */,
-				DB52CFA61C6A543600254F76 /* IMG_4938.png in Resources */,
 				D622D3481C3A2E4E002DB8BF /* viettel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,7 +622,7 @@
 				D622D3071C3A179A002DB8BF /* ViewController.m in Sources */,
 				D622D3041C3A179A002DB8BF /* AppDelegate.m in Sources */,
 				DBC144F61C624C80003265DE /* Detail.m in Sources */,
-				D622D34D1C3A31A3002DB8BF /* MBProgressHUD.m in Sources */,
+				DBA444791C79B8F9003B1C6E /* MBProgressHUD.m in Sources */,
 				DB9B62621C526E1700022881 /* OptionView.m in Sources */,
 				D622D33D1C3A28D0002DB8BF /* CustomCell.m in Sources */,
 				D622D3501C3A3368002DB8BF /* networkData.m in Sources */,
@@ -765,8 +765,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -786,8 +786,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -806,11 +806,19 @@
 		D6EED23F1C3ADA9700813889 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
@@ -908,11 +916,19 @@
 		D6EED2401C3ADA9700813889 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",

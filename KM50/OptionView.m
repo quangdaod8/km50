@@ -40,7 +40,7 @@
     PFInstallation *install = [PFInstallation currentInstallation];
     [install setChannels:channels];
     [install saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if(!error) {
             UIAlertController *done = [UIAlertController alertControllerWithTitle:@"Đã Lưu" message:@"Đã lưu trạng thái đăng ký thành công" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

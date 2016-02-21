@@ -143,7 +143,7 @@
                 [querry whereKey:@"network" equalTo:@"pass"];
                 [querry getFirstObjectInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
 
-                    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+                    [MBProgressHUD hideHUDForView:self.view animated:YES];
                     if(!error) { if([al.textFields[0].text isEqualToString:object[@"message"]]) [self performSegueWithIdentifier:@"setup" sender:self];
                     } else [al dismissViewControllerAnimated:YES completion:nil];
                     }];

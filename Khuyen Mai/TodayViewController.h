@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface TodayViewController : UIViewController
+@interface TodayViewController : UIViewController<UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
+
+- (IBAction)labelTap:(id)sender;
 
 @end

@@ -37,7 +37,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 -(void)thoat {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -51,6 +51,9 @@
         NSURL *urlSa = [NSURL URLWithString:@"https://www.facebook.com/km50app"];
         if ([[UIApplication sharedApplication] canOpenURL:urlApp]) [[UIApplication sharedApplication] openURL:urlApp];
         else [[UIApplication sharedApplication] openURL:urlSa];
+    }
+    if(indexPath.row == 5) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/developer/hoa-vo/id1003146014"]];
     }
 }
 

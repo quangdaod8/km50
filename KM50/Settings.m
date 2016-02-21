@@ -19,7 +19,7 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     NetworkService *service = [[NetworkService alloc]init];
     [service getDataForArray:^(NSArray *data, NSError *error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if(!error) {
             networkData *vina = [[networkData alloc]init];
             vina = data[0];
@@ -83,7 +83,7 @@
     [push setData:data];
     [push expireAfterTimeInterval:86400];
     [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
 
    }
@@ -110,7 +110,7 @@
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         [push setChannels:channels];
         [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
         }];
         }];
         
@@ -125,7 +125,7 @@
         UIAlertAction *gui = [UIAlertAction actionWithTitle:@"GỬI ĐẾN TẤT CẢ CÁC THIẾT BỊ" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             [push sendPushInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-                [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
             }];
         }];
         UIAlertAction *huy = [UIAlertAction actionWithTitle:@"HUỶ" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
@@ -162,7 +162,7 @@
                                 [object setObject:[NSNumber numberWithBool:_swWidget.isOn] forKey:@"isKm"];
                                 object[@"message"] = _txtWidget.text;
                                 [object saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-                                    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+                                    [MBProgressHUD hideHUDForView:self.view animated:YES];
                                 }];
                             }];
                         }]; }];
