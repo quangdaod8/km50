@@ -128,8 +128,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-1h-q58">
                                                     <rect key="frame" x="8" y="8" width="304" height="86"/>
-                                                    <string key="text">Lựa chọn nhà mạng mà bạn quan tâm. Hệ thống sẽ gửi thông báo 2 lần trong ngày có khuyến mãi (lúc 8h &amp; 19h).
-Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Widget &amp; bên trong App.</string>
+                                                    <string key="text">Lựa chọn nhà mạng mà bạn quan tâm. Hệ thống sẽ gửi thông báo (áp dụng cho toàn bộ thuê bao) 2 lần trong ngày có khuyến mãi (lúc 8h &amp; 19h). Tuỳ chọn này không ảnh hướng đến nội dung hiển thị trên Widget &amp; bên trong App.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -328,7 +327,7 @@ Trân trọng.
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-HF-nwR">
                                             <rect key="frame" x="8" y="0.0" width="312" height="84"/>
-                                            <string key="text">Hệ thống sẽ tự động gửi thông báo ngay khi có chương trình khuyến mãi. Bạn cũng có thể xem thông tin ngay trên màn hình mà không cần mở ứng dụng bằng cách cài Widget.</string>
+                                            <string key="text">Hệ thống sẽ tự động gửi thông báo khuyến mãi (áp dụng cho toàn bộ thuê bao). Bạn cũng có thể xem thông tin ngay trên màn hình mà không cần mở ứng dụng bằng cách cài Widget.</string>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                             <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>

@@ -23,15 +23,13 @@
     
     if(_detail.isKm) {
         
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [self.navigationItem.backBarButtonItem setEnabled:NO];
+    _textField.text = _detail.detail;
         
     _banner.adUnitID = @"ca-app-pub-9719677587937425/7906074995";
     _banner.rootViewController = self;
     GADRequest *request1 = [[GADRequest alloc]init];
     //request1.testDevices = @[ @"d16c9931688b304bfc891242ed02c3c3" ];
     [self.banner loadRequest:request1];
-    _banner.hidden = YES;
         
     _full = [[GADInterstitial alloc]initWithAdUnitID:@"ca-app-pub-9719677587937425/7347671791"];
     GADRequest *request = [[GADRequest alloc]init];
@@ -39,9 +37,11 @@
     [_full loadRequest:request];
     _full.delegate = self;
         
-        UIBarButtonItem *share = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share)];
-        self.navigationItem.rightBarButtonItem = share;
-        [self.navigationItem.rightBarButtonItem setEnabled:NO];
+    UIBarButtonItem *share = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share)];
+    self.navigationItem.rightBarButtonItem = share;
+        
+    UIBarButtonItem *back = [[UIBarButtonItem alloc]initWithTitle:@"Xong" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        self.navigationItem.leftBarButtonItem = back;
         
     } else {
         _textField.textAlignment = NSTextAlignmentCenter;
@@ -51,20 +51,19 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)back {
+    if(_full.isReady) [_full presentFromRootViewController:self];
+    else [self.navigationController popViewControllerAnimated:YES];
+    
+}
+-(void)interstitialDidDismissScreen:(GADInterstitial *)ad {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)interstitialDidReceiveAd:(GADInterstitial *)ad {
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
-    [ad presentFromRootViewController:self];
-}
--(void)interstitialDidDismissScreen:(GADInterstitial *)ad {
-     _textField.text = _detail.detail;
-    _banner.hidden = NO;
-    [self.navigationItem.rightBarButtonItem setEnabled:YES];
-    [self.navigationItem.backBarButtonItem setEnabled:YES];
-}
+
 -(void)share {
     UIAlertController *share = [UIAlertController alertControllerWithTitle:@"" message:@"Chia sẻ tin khuyến mãi" preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *huy = [UIAlertAction actionWithTitle:@"Huỷ" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
