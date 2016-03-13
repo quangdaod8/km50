@@ -11,59 +11,22 @@
 @implementation NetworkService
 
 -(void)getDataForArray:(blockDone)completed {
-    NSMutableArray *array = [[NSMutableArray alloc]init];
     
     PFQuery *query = [[PFQuery alloc]initWithClassName:@"data"];
-    [query whereKey:@"network" equalTo:@"vina"];
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+    [query whereKey:@"network" containedIn:[NSArray arrayWithObjects:@"vina",@"mobi",@"viettel", nil]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if(!error) {
-        networkData *netData = [[networkData alloc]init];
-        netData.isKm = [object[@"isKm"] boolValue];
-        netData.message = object[@"message"];
-        netData.network = @"vina";
-        netData.notnow = object[@"notnow"];
-        netData.detail = object[@"detail"];
-        [array addObject:netData];
-            
-        [query whereKey:@"network" equalTo:@"mobi"];
-        [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-                if(!error) {
-                    networkData *netData = [[networkData alloc]init];
-                    netData.isKm = [object[@"isKm"] boolValue];
-                    netData.message = object[@"message"];
-                    netData.network = @"mobi";
-                    netData.notnow = object[@"notnow"];
-                    netData.detail = object[@"detail"];
-                    [array addObject:netData];
-                    
-                    [query whereKey:@"network" equalTo:@"viettel"];
-                    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-                        if(!error) {
-                            networkData *netData = [[networkData alloc]init];
-                            netData.isKm = [object[@"isKm"] boolValue];
-                            netData.message = object[@"message"];
-                            netData.network = @"viettel";
-                            netData.notnow = object[@"notnow"];
-                            netData.detail = object[@"detail"];
-                            [array addObject:netData];
-                            
-                            [query whereKey:@"network" equalTo:@"widget"];
-                            [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-                                if(!error) {
-                                    networkData *netData = [[networkData alloc]init];
-                                    netData.isKm = [object[@"isKm"] boolValue];
-                                    netData.message = object[@"message"];
-                                    netData.network = @"widget";
-                                    netData.notnow = object[@"notnow"];
-                                    [array addObject:netData];
-                                    completed(array,nil);
-                                } else completed(nil,error);
-                            }];
-                        } else completed(nil,error);
-                    }];
-                    
-                } else completed(nil,error);
-        }];
+            NSMutableArray *array = [[NSMutableArray alloc]init];
+            for(int i = 0;i < [objects count]; i++) {
+                networkData *temp = [[networkData alloc]init];
+                temp.isKm = [objects[i][@"isKm"]boolValue];
+                temp.message = objects[i][@"message"];
+                temp.notnow = objects[i][@"notnow"];
+                temp.detail = objects[i][@"detail"];
+                temp.network = objects[i][@"network"];
+                [array addObject:temp];
+            }
+            completed(array,nil);
         } else completed(nil,error);
     }];
 }
@@ -131,4 +94,20 @@
         else sent(error);
     }];
 }
+-(void)getWebUrl:(blockCompleted)completed {
+    PFQuery *query = [[PFQuery alloc]initWithClassName:@"data"];
+    [query whereKey:@"network" equalTo:@"web"];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        if(!error) {
+            networkData *netData = [[networkData alloc]init];
+            netData.message = object[@"message"];
+            netData.detail = object[@"detail"];
+            completed(netData,nil);
+        } else {
+            completed(nil,error);
+        }
+    }];
+
+}
+
 @end

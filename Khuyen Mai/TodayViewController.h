@@ -12,6 +12,5 @@
 @interface TodayViewController : UIViewController<UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
 
-- (IBAction)labelTap:(id)sender;
 
 @end

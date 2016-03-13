@@ -16,6 +16,7 @@ typedef void (^blockOk) (NSError* error);
 @interface NetworkService : NSObject
 
 -(void)getDataForArray:(blockDone)completed;
+-(void)getWebUrl:(blockCompleted)completed;
 -(void)getInfoByNetwork:(NSString*)Network Completed:(blockCompleted) completed;
 -(void)saveDataForNetwork:(NSString*)Network Message:(NSString*)message Detail:(NSString*)detail isKm:(BOOL)isKm Done:(blockOk)done;
 -(void)sendPushToChannels:(NSArray*)channels Message:(NSString*)message Sent:(blockOk)sent;

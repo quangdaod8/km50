@@ -16,9 +16,13 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    _service = [[NetworkService alloc]init];
+    _url = @"http://km50.blogspot.com";
     
     _header.layer.borderColor = [[UIColor lightGrayColor]CGColor];
     _header.layer.borderWidth = 0.5;
+    [_tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 
     self.bannerView.adUnitID = @"ca-app-pub-9719677587937425/2666256995";
     self.bannerView.rootViewController = self;
@@ -35,15 +39,25 @@
         [install saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
             [isfirst setBool:YES forKey:@"isfirst"];
             [isfirst synchronize];
-            [isfirst setBool:YES forKey:@"isfirst"];
-            [isfirst synchronize];
         }];
     }
 
     self.navigationItem.title = @"KM50";
-    if(![[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
-        [self AlertWithTitle:@"Cho Phép Thông Báo" Messenger:@"Vui lòng cho phép thông báo để hệ thống có thể tự động gửi thông báo ngay khi có chương trình khuyến mãi" Butontitle:@"Ok"];
-    } 
+    
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+    {
+        if(![[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
+            [self AlertWithTitle:@"Cho Phép Thông Báo" Messenger:@"Vui lòng cho phép thông báo để hệ thống có thể tự động gửi thông báo ngay khi có chương trình khuyến mãi" Butontitle:@"Ok"];
+        }
+
+    }
+    else
+    {
+        UIRemoteNotificationType types = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+        if(!(types & UIRemoteNotificationTypeAlert)) {
+            [self AlertWithTitle:@"Cho Phép Thông Báo" Messenger:@"Vui lòng cho phép thông báo để hệ thống có thể tự động gửi thông báo ngay khi có chương trình khuyến mãi" Butontitle:@"Ok"];
+        }
+    }
 
     UIBarButtonItem *info = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:self action:@selector(info)];
     self.navigationItem.leftBarButtonItem = info;
@@ -58,8 +72,7 @@
     hub.backgroundColor = [UIColor whiteColor];
     [_tableView setUserInteractionEnabled:NO];
     
-    NetworkService *service = [[NetworkService alloc]init];
-    [service getDataForArray:^(NSArray *data, NSError *error) {
+    [_service getDataForArray:^(NSArray *data, NSError *error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self.navigationItem.leftBarButtonItem setEnabled:YES];
         [self.navigationItem.rightBarButtonItem setEnabled:YES];
@@ -76,9 +89,9 @@
         }
     }];
     
-    [super viewDidLoad];
-    [_tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    // Do any additional setup after loading the view, typically from a nib.
+    [_service getWebUrl:^(networkData *networkData, NSError *error) {
+        if(!error) _url = networkData.detail;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,9 +105,11 @@
 
 -(CustomCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    if(_array.count > 0) [cell setDataByNetworkData:_array[indexPath.row]];
+    if(_array.count > 0) {
+        networkData *data = [[networkData alloc]init];
+        data = (networkData*)_array[indexPath.row];
+        [cell setDataByNetworkData:data];
+    }
     return cell;
 }
 
@@ -103,37 +118,19 @@
 }
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewRowAction *modifyAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Gửi Tin" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        if([MFMessageComposeViewController canSendText]) {
-            MFMessageComposeViewController *tin = [[MFMessageComposeViewController alloc]init];
-            networkData *data = [[networkData alloc]init];
-            data = _array[indexPath.row];
-            if(data.isKm) [tin setBody:data.message];
-            else [tin setBody:data.notnow];
-            tin.messageComposeDelegate = self;
-            [self presentViewController:tin animated:YES completion:^{
-                [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
-            }];
-        } else [self AlertWithTitle:@"Lỗi" Messenger:@"Không thể gửi tin nhắn trên thiết bị này" Butontitle:@"Ok"];
-    }];
-    modifyAction.backgroundColor = [UIColor greenColor];
-    
-    UITableViewRowAction *copy = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Copy" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        UIPasteboard *paster = [UIPasteboard generalPasteboard];
-        networkData *data = [[networkData alloc]init];
-        data = _array[indexPath.row];
-        paster.string = data.message;
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sao Chép" message:@"Đã sao chép vào bộ nhớ đệm." preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ok) {[alert dismissViewControllerAnimated:YES completion:nil];
-            [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+    networkData *data = [[networkData alloc]init];
+    data = _array[indexPath.row];
+    UITableViewRowAction *share = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Chia Sẻ" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        
+        NSString *string = data.message;
+        NSURL *url = [NSURL URLWithString:_url];
+            UIActivityViewController *share = [[UIActivityViewController alloc]initWithActivityItems:@[string,url] applicationActivities:nil];
+        [self presentViewController:share animated:YES completion:^{
+            [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
         }];
-        [alert addAction:ok];
-        [self presentViewController:alert animated:YES completion:nil];
     }];
-    copy.backgroundColor = [UIColor lightGrayColor];
-    
-    return @[modifyAction,copy];
-    
+    share.backgroundColor = [UIColor greenColor];
+    return @[share];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -146,33 +143,16 @@
 
 -(void)AlertWithTitle:(NSString*)title  Messenger:(NSString*)messenger  Butontitle:(NSString*)buttonTitle
 {
+    if ([UIAlertController class]) {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:messenger preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *ok = [UIAlertAction actionWithTitle:buttonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *ok) {[alert dismissViewControllerAnimated:YES completion:nil];}];
     [alert addAction:ok];
     [self presentViewController:alert animated:YES completion:nil];
-}
-
--(void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
-    
-    switch (result) {
-        case MessageComposeResultCancelled:
-            break;
-            
-        case MessageComposeResultFailed:
-        {
-            break;
-        }
-            
-        case MessageComposeResultSent:
-            break;
-            
-        default:
-            break;
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:title message:messenger delegate:self cancelButtonTitle:buttonTitle otherButtonTitles:nil];
+        [alert show];
     }
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 -(void)widget {
     [self performSegueWithIdentifier:@"wg" sender:self];

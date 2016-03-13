@@ -12,7 +12,7 @@
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #import <MessageUI/MessageUI.h>
 
-@interface Detail : UIViewController <GADInterstitialDelegate,MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>
+@interface Detail : UIViewController <GADInterstitialDelegate>
 @property(strong,nonatomic) networkData* detail;
 @property (weak, nonatomic) IBOutlet UITextView *textField;
 @property(strong, nonatomic) GADInterstitial *full;

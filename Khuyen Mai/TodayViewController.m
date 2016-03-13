@@ -26,7 +26,12 @@
     [super viewDidLoad];
     [Parse setApplicationId:@"NUgdGclAIEmYcwu8HAisyHGbT5eIfguOz6ITSRXb" clientKey:@"WBYwmDqkwOC7FCixLKM083fcw3UM1nTXYOQCl4wt"];
  
-
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(openApp)];
+    tap.numberOfTapsRequired = 1;
+    tap.numberOfTouchesRequired = 1;
+    [self.view addGestureRecognizer:tap];
+    [self.view setUserInteractionEnabled:YES];
+    _labelText.userInteractionEnabled = YES;
         // Do any additional setup after loading the view from its nib.
 }
 
@@ -63,7 +68,7 @@
 }
 
 
-- (IBAction)labelTap:(id)sender {
+-(void)openApp {
     NSLog(@"ok");
 }
 @end

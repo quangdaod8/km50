@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.userInteractionEnabled = NO;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -21,8 +23,15 @@
 }
 -(void)setDataByNetworkData:(networkData *)networkData {
     _imgNetwork.image = [UIImage imageNamed:networkData.network];
-    if(networkData.isKm) _labelMessage.text = networkData.message;
-    else _labelMessage.text = networkData.notnow;
+    if(networkData.isKm) {
+        _labelMessage.text = networkData.message;
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        self.userInteractionEnabled = YES;
+    }
+    else {
+        _labelMessage.text = networkData.notnow;
+        _labelMessage.textColor = [UIColor grayColor];
+    }
 }
 
 @end

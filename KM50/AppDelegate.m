@@ -21,10 +21,8 @@
     //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:1 green:0.2 blue:0.4 alpha:1]];
     //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:1 green:0.2 blue:0.4 alpha:1]}];
-    [[UIApplication sharedApplication] currentUserNotificationSettings];
+    //[[UIApplication sharedApplication] currentUserNotificationSettings];
     
-    
-        // https://parse.com/docs/ios/guide#local-datastore
         [Parse enableLocalDatastore];
         
         // Initialize Parse.
@@ -34,11 +32,37 @@
         // [Optional] Track statistics around application opens.
         [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
         
-    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes  categories:nil];
-    [application registerUserNotificationSettings:settings];
-    [application registerForRemoteNotifications];
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        NSLog(@"Requesting permission for push notifications...iOS8"); // iOS 8
+        UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                        UIUserNotificationTypeBadge |
+                                                        UIUserNotificationTypeSound);
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications];
+    } else {
+        NSLog(@"Registering device for push notifications..."); // iOS 7 and earlier
+        [UIApplication.sharedApplication registerForRemoteNotificationTypes:
+         UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge |
+         UIRemoteNotificationTypeSound];
+    }
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current Installation and save it to Parse
+    NSLog(@"Device Token: %@",deviceToken);
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    if(currentInstallation.badge > 0) currentInstallation.badge = 0;
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation setObject:[self deviceName] forKey:@"deviceInfo"];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    if (application.applicationState == UIApplicationStateInactive) {
+        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
+    } else [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -63,21 +87,6 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // Store the deviceToken in the current Installation and save it to Parse
-    NSLog(@"Device Token: %@",deviceToken);
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    if(currentInstallation.badge > 0) currentInstallation.badge = 0;
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    [currentInstallation setObject:[self deviceName] forKey:@"deviceInfo"];
-    [currentInstallation saveInBackground];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    if (application.applicationState == UIApplicationStateInactive) {
-        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
-    } else [PFPush handlePush:userInfo];
-}
 - (NSString*) deviceName
 {
     struct utsname systemInfo;

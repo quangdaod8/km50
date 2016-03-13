@@ -16,7 +16,7 @@
 #import <MessageUI/MessageUI.h>
 #import "Setting.h"
 
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,MFMessageComposeViewControllerDelegate>
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *array;
 @property(nonatomic, readonly) UIUserNotificationType types;
@@ -25,6 +25,9 @@
 
 @property (weak, nonatomic) IBOutlet UIView *header;
 
+@property(strong, nonatomic) NetworkService *service;
+
+@property(strong, nonatomic) NSString *url;
 
 @end
 

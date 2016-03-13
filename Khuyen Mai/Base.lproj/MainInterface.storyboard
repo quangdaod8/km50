@@ -24,10 +24,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="wBJ-E0-rhQ" appends="YES" id="OJz-Ae-ISm"/>
-                                    <outletCollection property="gestureRecognizers" destination="wBJ-E0-rhQ" appends="YES" id="xSA-oy-6Z1"/>
-                                </connections>
                             </label>
                         </subviews>
                         <constraints>
@@ -48,12 +44,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="wBJ-E0-rhQ">
-                    <connections>
-                        <action selector="labelTap:" destination="M4Y-Lb-cyx" id="ap6-SQ-Tj0"/>
-                        <outlet property="delegate" destination="M4Y-Lb-cyx" id="MTw-AP-eHc"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="516" y="284"/>
         </scene>

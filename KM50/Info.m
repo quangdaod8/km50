@@ -140,7 +140,7 @@
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
                 [MBProgressHUD showHUDAddedTo:self.view animated:YES];
                 PFQuery *querry = [PFQuery queryWithClassName:@"data"];
-                [querry whereKey:@"network" equalTo:@"pass"];
+                [querry whereKey:@"network" equalTo:@"web"];
                 [querry getFirstObjectInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
 
                     [MBProgressHUD hideHUDForView:self.view animated:YES];
