@@ -125,6 +125,11 @@
         NSString *string = data.message;
         NSURL *url = [NSURL URLWithString:_url];
             UIActivityViewController *share = [[UIActivityViewController alloc]initWithActivityItems:@[string,url] applicationActivities:nil];
+        
+        UIPopoverPresentationController *popPresenter = [share popoverPresentationController];
+        popPresenter.sourceView = self.view;
+        popPresenter.sourceRect = [_tableView cellForRowAtIndexPath:indexPath].frame;
+        
         [self presentViewController:share animated:YES completion:^{
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
         }];

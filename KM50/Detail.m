@@ -69,6 +69,11 @@
 
 -(void)share {
     UIActivityViewController *share = [[UIActivityViewController alloc]initWithActivityItems:@[_detail.detail] applicationActivities:nil];
+    
+    UIPopoverPresentationController *popPresenter = [share popoverPresentationController];
+    popPresenter.sourceView = self.view;
+    popPresenter.sourceRect = self.navigationController.navigationBar.frame;
+    
     [self presentViewController:share animated:YES completion:nil];
 }
 

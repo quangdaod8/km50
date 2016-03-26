@@ -72,6 +72,11 @@
     [lh addAction:mail];
     [lh addAction:fb];
     [lh addAction:huy];
+    
+    UIPopoverPresentationController *popPresenter = [lh popoverPresentationController];
+    popPresenter.sourceView = self.view;
+    popPresenter.sourceRect = _btnAva.frame;
+    
     [self presentViewController:lh animated:YES completion:nil];
 }
 
