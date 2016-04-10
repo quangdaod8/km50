@@ -67,7 +67,7 @@
 		DBC144F21C62491B003265DE /* vina.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC144F11C62491B003265DE /* vina.png */; };
 		DBC144F61C624C80003265DE /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC144F51C624C80003265DE /* Detail.m */; };
 		DBCB002C1C68FD52009AD907 /* Donate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCB002B1C68FD52009AD907 /* Donate.m */; };
-		DBCBBD361CA7160100A04CC4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCBBD351CA7160100A04CC4 /* Parse.framework */; };
+		DBD7BB441CB60B0700291F35 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD7BB431CB60B0700291F35 /* Parse.framework */; };
 		DBE1303F1C8C358E0061F700 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE1303E1C8C358E0061F700 /* Parse.framework */; };
 		DBE130431C8C35E20061F700 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE130421C8C35E20061F700 /* GoogleMobileAds.framework */; };
 		DBE130451C8C36310061F700 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE130441C8C36310061F700 /* Bolts.framework */; };
@@ -168,7 +168,7 @@
 		DBC144F51C624C80003265DE /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 		DBCB002A1C68FD52009AD907 /* Donate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Donate.h; sourceTree = "<group>"; };
 		DBCB002B1C68FD52009AD907 /* Donate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Donate.m; sourceTree = "<group>"; };
-		DBCBBD351CA7160100A04CC4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DBD7BB431CB60B0700291F35 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DBE130391C8C33750061F700 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../Desktop/Libs/GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		DBE1303E1C8C358E0061F700 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DBE130421C8C35E20061F700 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 				D6EED2461C3AE7DD00813889 /* libz.tbd in Frameworks */,
 				D6EED2681C3B587500813889 /* Bolts.framework in Frameworks */,
 				D6EED2451C3AE7C600813889 /* CFNetwork.framework in Frameworks */,
-				DBCBBD361CA7160100A04CC4 /* Parse.framework in Frameworks */,
+				DBD7BB441CB60B0700291F35 /* Parse.framework in Frameworks */,
 				D6EED2321C3ADA9700813889 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +380,7 @@
 		D6EED2331C3ADA9700813889 /* Khuyen Mai */ = {
 			isa = PBXGroup;
 			children = (
-				DBCBBD351CA7160100A04CC4 /* Parse.framework */,
+				DBD7BB431CB60B0700291F35 /* Parse.framework */,
 				D6EED2661C3B587500813889 /* Bolts.framework */,
 				D6EED2341C3ADA9700813889 /* TodayViewController.h */,
 				D6EED2351C3ADA9700813889 /* TodayViewController.m */,
@@ -928,6 +928,10 @@
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 				);
 				INFOPLIST_FILE = "Khuyen Mai/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1049,6 +1053,10 @@
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
+					"$(PROJECT_DIR)/Khuyen",
+					Mai,
 					"$(PROJECT_DIR)/Khuyen",
 					Mai,
 					"$(PROJECT_DIR)/Khuyen",
