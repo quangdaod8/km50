@@ -21,7 +21,6 @@
     if([_detail.network isEqualToString:@"mobi"]) self.navigationItem.title = @"Mobifone";
     if([_detail.network isEqualToString:@"viettel"]) self.navigationItem.title = @"Viettel";
     
-        // Do any additional setup after loading the view.
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -50,6 +49,21 @@
     } else {
         _textField.textAlignment = NSTextAlignmentCenter;
         _textField.text = [NSString stringWithFormat:@"\n%@", _detail.notnow];
+        
+        _banner.adUnitID = @"ca-app-pub-9719677587937425/7906074995";
+        _banner.rootViewController = self;
+        GADRequest *request1 = [[GADRequest alloc]init];
+        //request1.testDevices = @[ @"d16c9931688b304bfc891242ed02c3c3" ];
+        [self.banner loadRequest:request1];
+        
+        _full = [[GADInterstitial alloc]initWithAdUnitID:@"ca-app-pub-9719677587937425/7347671791"];
+        GADRequest *request = [[GADRequest alloc]init];
+        //request.testDevices = @[ @"d16c9931688b304bfc891242ed02c3c3" ];
+        [_full loadRequest:request];
+        _full.delegate = self;
+        
+        UIBarButtonItem *back = [[UIBarButtonItem alloc]initWithTitle:@"Xong" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        self.navigationItem.leftBarButtonItem = back;
     }
 
 }

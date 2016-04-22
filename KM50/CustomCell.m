@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     // Initialization code
     self.selectionStyle = UITableViewCellSelectionStyleNone;
-    self.userInteractionEnabled = NO;
+    self.userInteractionEnabled = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -26,11 +26,11 @@
     if(networkData.isKm) {
         _labelMessage.text = networkData.message;
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        self.userInteractionEnabled = YES;
+        //self.userInteractionEnabled = YES;
     }
     else {
         _labelMessage.text = networkData.notnow;
-        _labelMessage.textColor = [UIColor grayColor];
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 }
 
